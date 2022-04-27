@@ -166,7 +166,6 @@
 			children = (
 				39816210281842B600963F04 /* ListenViewController.swift */,
 				397A99772819AF180028E880 /* ListenViewController.xib */,
-				397A997C2819BAFD0028E880 /* TableViewCell */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -216,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				397A997B2819BAE10028E880 /* ViewController */,
+				397A997C2819BAFD0028E880 /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
