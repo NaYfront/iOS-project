@@ -11,11 +11,14 @@
 		3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962A1EF27DCA40500358C48 /* SceneDelegate.swift */; };
 		3962A1F727DCA40600358C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3962A1F627DCA40600358C48 /* Assets.xcassets */; };
 		3962A1FA27DCA40600358C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3962A1F827DCA40600358C48 /* LaunchScreen.storyboard */; };
+		397A99762819A8700028E880 /* ListenContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A99752819A8700028E880 /* ListenContent.swift */; };
+		397A99782819AF180028E880 /* ListenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397A99772819AF180028E880 /* ListenViewController.xib */; };
+		397A99832819BF020028E880 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A99812819BF020028E880 /* ContentTableViewCell.swift */; };
+		397A99842819BF020028E880 /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397A99822819BF020028E880 /* ContentTableViewCell.xib */; };
 		398162032817094F00963F04 /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162022817094F00963F04 /* InfoPresenter.swift */; };
 		3981620A281712A300963F04 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39816209281712A300963F04 /* InfoViewController.swift */; };
 		3981620C2817132D00963F04 /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981620B2817132D00963F04 /* InfoBuilder.swift */; };
 		39816212281842B600963F04 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39816210281842B600963F04 /* ListenViewController.swift */; };
-		39816213281842B600963F04 /* ListenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39816211281842B600963F04 /* ListenViewController.xib */; };
 		398162152818438000963F04 /* ListenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162142818438000963F04 /* ListenPresenter.swift */; };
 		3981621728184A2700963F04 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3981621628184A2700963F04 /* InfoViewController.xib */; };
 		3981621928184FFD00963F04 /* ListenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621828184FFD00963F04 /* ListenBuilder.swift */; };
@@ -37,11 +40,14 @@
 		3962A1F627DCA40600358C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3962A1F927DCA40600358C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3962A1FB27DCA40600358C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		397A99752819A8700028E880 /* ListenContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenContent.swift; sourceTree = "<group>"; };
+		397A99772819AF180028E880 /* ListenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListenViewController.xib; sourceTree = "<group>"; };
+		397A99812819BF020028E880 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
+		397A99822819BF020028E880 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
 		398162022817094F00963F04 /* InfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPresenter.swift; sourceTree = "<group>"; };
 		39816209281712A300963F04 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		3981620B2817132D00963F04 /* InfoBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBuilder.swift; sourceTree = "<group>"; };
 		39816210281842B600963F04 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
-		39816211281842B600963F04 /* ListenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListenViewController.xib; sourceTree = "<group>"; };
 		398162142818438000963F04 /* ListenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenPresenter.swift; sourceTree = "<group>"; };
 		3981621628184A2700963F04 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		3981621828184FFD00963F04 /* ListenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenBuilder.swift; sourceTree = "<group>"; };
@@ -155,6 +161,25 @@
 			path = SleepApp;
 			sourceTree = "<group>";
 		};
+		397A997B2819BAE10028E880 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39816210281842B600963F04 /* ListenViewController.swift */,
+				397A99772819AF180028E880 /* ListenViewController.xib */,
+				397A997C2819BAFD0028E880 /* TableViewCell */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		397A997C2819BAFD0028E880 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				397A99812819BF020028E880 /* ContentTableViewCell.swift */,
+				397A99822819BF020028E880 /* ContentTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		3981620628170CC900963F04 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +207,7 @@
 		3981620D2818424D00963F04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				397A99752819A8700028E880 /* ListenContent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,8 +215,7 @@
 		3981620E2818425400963F04 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				39816211281842B600963F04 /* ListenViewController.xib */,
-				39816210281842B600963F04 /* ListenViewController.swift */,
+				397A997B2819BAE10028E880 /* ViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,8 +356,9 @@
 				398162352818650200963F04 /* ProfileViewController.xib in Resources */,
 				3962A1FA27DCA40600358C48 /* LaunchScreen.storyboard in Resources */,
 				398162372818670300963F04 /* RestViewController.xib in Resources */,
-				39816213281842B600963F04 /* ListenViewController.xib in Resources */,
+				397A99782819AF180028E880 /* ListenViewController.xib in Resources */,
 				3981622D2818556D00963F04 /* View.xib in Resources */,
+				397A99842819BF020028E880 /* ContentTableViewCell.xib in Resources */,
 				3962A1F727DCA40600358C48 /* Assets.xcassets in Resources */,
 				3981621728184A2700963F04 /* InfoViewController.xib in Resources */,
 			);
@@ -390,6 +416,7 @@
 				3962A1EE27DCA40500358C48 /* AppDelegate.swift in Sources */,
 				398162032817094F00963F04 /* InfoPresenter.swift in Sources */,
 				39816221281853B700963F04 /* RestViewController.swift in Sources */,
+				397A99832819BF020028E880 /* ContentTableViewCell.swift in Sources */,
 				3981621E2818539900963F04 /* RestBuilder.swift in Sources */,
 				3981620A281712A300963F04 /* InfoViewController.swift in Sources */,
 				3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */,
@@ -401,6 +428,7 @@
 				39816212281842B600963F04 /* ListenViewController.swift in Sources */,
 				3981622F281855E500963F04 /* ProfilePresenter.swift in Sources */,
 				398162312818561500963F04 /* ProfileBuilder.swift in Sources */,
+				397A99762819A8700028E880 /* ListenContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
