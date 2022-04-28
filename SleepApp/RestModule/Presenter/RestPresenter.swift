@@ -7,23 +7,22 @@
 
 import Foundation
 
-protocol RestViewProtocol: AnyObject {
-    func setGreeting(greeting: String)
-}
-
-protocol RestViewPresenterProtocol: AnyObject {
-    init(view: RestViewProtocol)
-    func showGreeting()
+protocol RestViewPresenterProtocol: class {
+    init(view: RestViewProtocol, user: User)
+    func changeUserState()
 }
 
 class RestPresenter: RestViewPresenterProtocol {
     let view: RestViewProtocol
+    let user: User
     
-    required init(view: RestViewProtocol) {
+    required init(view: RestViewProtocol, user: User) {
         self.view = view
+        self.user = user
     }
     
-    func showGreeting() {
-        print("showGreeting")
+    func changeUserState() {
+        user.changeState()
+        self.view.showUserStateAnimation(userState: user.currentState)
     }
 }

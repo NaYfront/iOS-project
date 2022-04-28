@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2899D1472819B8FC001A3E0A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899D1462819B8FC001A3E0A /* User.swift */; };
 		3962A1EE27DCA40500358C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962A1ED27DCA40500358C48 /* AppDelegate.swift */; };
 		3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962A1EF27DCA40500358C48 /* SceneDelegate.swift */; };
 		3962A1F727DCA40600358C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3962A1F627DCA40600358C48 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2899D1462819B8FC001A3E0A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3962A1EA27DCA40500358C48 /* SleepApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3962A1ED27DCA40500358C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3962A1EF27DCA40500358C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				3962A1ED27DCA40500358C48 /* AppDelegate.swift */,
 				3962A1EF27DCA40500358C48 /* SceneDelegate.swift */,
 				39224AF127EB6795005CC973 /* Resources */,
+				2899D1462819B8FC001A3E0A /* User.swift */,
 			);
 			path = SleepApp;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */,
 				3981622A2818552400963F04 /* ProfileViewController.swift in Sources */,
 				3981621928184FFD00963F04 /* ListenBuilder.swift in Sources */,
+				2899D1472819B8FC001A3E0A /* User.swift in Sources */,
 				398162152818438000963F04 /* ListenPresenter.swift in Sources */,
 				3981620C2817132D00963F04 /* InfoBuilder.swift in Sources */,
 				398162242818542300963F04 /* RestPresenter.swift in Sources */,

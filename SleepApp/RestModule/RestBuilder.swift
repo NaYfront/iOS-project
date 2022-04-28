@@ -13,12 +13,12 @@ protocol RestBuilder {
 
 class RestModuleBuilder: RestBuilder {
     static func createRestFirstScreen() -> UIViewController {
-        let view = RestViewController()
-        let presenter = RestPresenter(view: view)
-        view.presenter = presenter
+        let restViewController = RestViewController()
+        let restPresenter = RestPresenter(view: restViewController, user: User(preferableWakeTime: "00:00"))
+        restViewController.restPresenter = restPresenter
         
-        view.tabBarItem = UITabBarItem(title: "Rest", image: UIImage(systemName: "moon.fill"), tag: 0)
+        restViewController.tabBarItem = UITabBarItem(title: "Rest", image: UIImage(systemName: "moon.fill"), tag: 0)
         
-        return view
+        return restViewController
     }
 }
