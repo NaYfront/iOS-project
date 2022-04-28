@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ListenViewController: UIViewController, ListenViewProtocol {
+class MainViewController: UIViewController, MainViewProtocol {
+    // MARK: - IBOutlets
     @IBOutlet weak var mainTableView: UITableView!
     
-    var presenter: ListenViewPresenterProtocol!
+    // MARK: - Properties
+    var presenter: MainViewPresenterProtocol!
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +27,7 @@ class ListenViewController: UIViewController, ListenViewProtocol {
 }
 
 // MARK: - Table View Data Source
-extension ListenViewController: UITableViewDataSource {
+extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.content.count
     }
@@ -40,11 +43,11 @@ extension ListenViewController: UITableViewDataSource {
 }
 
 // MARK: - Table View Delegate
-extension ListenViewController: UITableViewDelegate {
+extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let detailContent = presenter.content[indexPath.row].detailContent
-        let detailVC = ListenModuleBuilder.createListenSecondScreen(detailContent: detailContent)
+        let detailVC = MainModuleBuilder.createListenSecondScreen(detailContent: detailContent)
         
         navigationController?.pushViewController(detailVC, animated: true)
         

@@ -9,10 +9,13 @@ import UIKit
 
 class DetailViewController: UIViewController, DetailViewProtocol {
 
+    // MARK: - IBOutlets
     @IBOutlet var detailTableView: UITableView!
     
+    // MARK: - Properties
     var presenter: DetailViewPresenterProtocol!
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

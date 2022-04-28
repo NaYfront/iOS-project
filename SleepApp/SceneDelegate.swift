@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let restVC = RestModuleBuilder.createRestFirstScreen()
         let infoVC = InfoModuleBuilder.createInfoFirstScreen()
-        let listenVC = ListenModuleBuilder.createListenFirstScreen()
+        let listenVC = MainModuleBuilder.createListenFirstScreen()
         let profileVC = ProfileModuleBuilder.createProfileFirstScreen()
         
         let tabBarController = UITabBarController()

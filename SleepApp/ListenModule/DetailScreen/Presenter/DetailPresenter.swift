@@ -17,9 +17,11 @@ protocol DetailViewPresenterProtocol {
 }
 
 class DetailPresenter: DetailViewPresenterProtocol {
+    // MARK: - Properties
     weak var view: DetailViewProtocol?
     var detailContent: [DetailContent]
     
+    // MARK: - Init
     required init(view: DetailViewProtocol, detailContent: [DetailContent]) {
         self.view = view
         self.detailContent = detailContent

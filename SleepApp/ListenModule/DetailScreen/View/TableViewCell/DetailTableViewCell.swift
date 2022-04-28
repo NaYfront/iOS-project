@@ -9,6 +9,7 @@ import UIKit
 
 class DetailTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var authorImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!

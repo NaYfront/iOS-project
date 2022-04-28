@@ -7,16 +7,16 @@
 
 import UIKit
 
-protocol ListenBuilder {
+protocol MainBuilder {
     static func createListenFirstScreen() -> UINavigationController
     static func createListenSecondScreen(detailContent: [DetailContent]) -> UIViewController
     static func createModuleContent() -> [MainContent]
 }
 
-class ListenModuleBuilder: ListenBuilder {
+class MainModuleBuilder: MainBuilder {
     static func createListenFirstScreen() -> UINavigationController {
-        let view = ListenViewController()
-        let presenter = ListenPresenter(view: view, content: createModuleContent())
+        let view = MainViewController()
+        let presenter = MainPresenter(view: view, content: createModuleContent())
         view.presenter = presenter
         
         view.tabBarItem = UITabBarItem(title: "Listen", image: UIImage(systemName: "headphones"), tag: 0)

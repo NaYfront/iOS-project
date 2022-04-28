@@ -9,6 +9,7 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var viewLabel: UILabel!
     
