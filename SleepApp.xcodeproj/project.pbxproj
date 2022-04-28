@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392026B0281AC83F000D0618 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392026AF281AC83F000D0618 /* DetailPresenter.swift */; };
+		392026B2281ADFD5000D0618 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 392026B1281ADFD5000D0618 /* DetailViewController.xib */; };
+		39447C66281AE8C60058A7A5 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39447C64281AE8C60058A7A5 /* MainTableViewCell.swift */; };
+		39447C67281AE8C60058A7A5 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39447C65281AE8C60058A7A5 /* MainTableViewCell.xib */; };
+		39447C7F281AFC330058A7A5 /* SleepAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39447C7E281AFC330058A7A5 /* SleepAppTests.swift */; };
+		39447C86281AFEC50058A7A5 /* ListenModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39447C85281AFEC50058A7A5 /* ListenModuleTests.swift */; };
+		395BB272281A9EBF00D99640 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395BB270281A9EBF00D99640 /* DetailViewController.swift */; };
+		395BB27A281A9F7000D99640 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395BB278281A9F7000D99640 /* DetailTableViewCell.swift */; };
+		395BB27B281A9F7000D99640 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395BB279281A9F7000D99640 /* DetailTableViewCell.xib */; };
 		3962A1EE27DCA40500358C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962A1ED27DCA40500358C48 /* AppDelegate.swift */; };
 		3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962A1EF27DCA40500358C48 /* SceneDelegate.swift */; };
 		3962A1F727DCA40600358C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3962A1F627DCA40600358C48 /* Assets.xcassets */; };
 		3962A1FA27DCA40600358C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3962A1F827DCA40600358C48 /* LaunchScreen.storyboard */; };
+		397A99762819A8700028E880 /* ContentStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397A99752819A8700028E880 /* ContentStructures.swift */; };
+		397A99782819AF180028E880 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 397A99772819AF180028E880 /* MainViewController.xib */; };
 		398162032817094F00963F04 /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162022817094F00963F04 /* InfoPresenter.swift */; };
 		3981620A281712A300963F04 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39816209281712A300963F04 /* InfoViewController.swift */; };
 		3981620C2817132D00963F04 /* InfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981620B2817132D00963F04 /* InfoBuilder.swift */; };
-		39816212281842B600963F04 /* ListenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39816210281842B600963F04 /* ListenViewController.swift */; };
-		39816213281842B600963F04 /* ListenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39816211281842B600963F04 /* ListenViewController.xib */; };
-		398162152818438000963F04 /* ListenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162142818438000963F04 /* ListenPresenter.swift */; };
+		39816212281842B600963F04 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39816210281842B600963F04 /* MainViewController.swift */; };
+		398162152818438000963F04 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162142818438000963F04 /* MainPresenter.swift */; };
 		3981621728184A2700963F04 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3981621628184A2700963F04 /* InfoViewController.xib */; };
-		3981621928184FFD00963F04 /* ListenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621828184FFD00963F04 /* ListenBuilder.swift */; };
+		3981621928184FFD00963F04 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621828184FFD00963F04 /* MainBuilder.swift */; };
 		3981621E2818539900963F04 /* RestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621D2818539900963F04 /* RestBuilder.swift */; };
 		39816221281853B700963F04 /* RestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621F281853B700963F04 /* RestViewController.swift */; };
 		398162242818542300963F04 /* RestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162232818542300963F04 /* RestPresenter.swift */; };
@@ -30,21 +40,42 @@
 		398162372818670300963F04 /* RestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398162362818670300963F04 /* RestViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		39447C80281AFC330058A7A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3962A1E227DCA40500358C48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3962A1E927DCA40500358C48;
+			remoteInfo = SleepApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		392026AF281AC83F000D0618 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		392026B1281ADFD5000D0618 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		39447C64281AE8C60058A7A5 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		39447C65281AE8C60058A7A5 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		39447C7C281AFC330058A7A5 /* SleepAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39447C7E281AFC330058A7A5 /* SleepAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAppTests.swift; sourceTree = "<group>"; };
+		39447C85281AFEC50058A7A5 /* ListenModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenModuleTests.swift; sourceTree = "<group>"; };
+		395BB270281A9EBF00D99640 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		395BB278281A9F7000D99640 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		395BB279281A9F7000D99640 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		3962A1EA27DCA40500358C48 /* SleepApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3962A1ED27DCA40500358C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3962A1EF27DCA40500358C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3962A1F627DCA40600358C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3962A1F927DCA40600358C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3962A1FB27DCA40600358C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		397A99752819A8700028E880 /* ContentStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStructures.swift; sourceTree = "<group>"; };
+		397A99772819AF180028E880 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		398162022817094F00963F04 /* InfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPresenter.swift; sourceTree = "<group>"; };
 		39816209281712A300963F04 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		3981620B2817132D00963F04 /* InfoBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBuilder.swift; sourceTree = "<group>"; };
-		39816210281842B600963F04 /* ListenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenViewController.swift; sourceTree = "<group>"; };
-		39816211281842B600963F04 /* ListenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListenViewController.xib; sourceTree = "<group>"; };
-		398162142818438000963F04 /* ListenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenPresenter.swift; sourceTree = "<group>"; };
+		39816210281842B600963F04 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		398162142818438000963F04 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		3981621628184A2700963F04 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
-		3981621828184FFD00963F04 /* ListenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenBuilder.swift; sourceTree = "<group>"; };
+		3981621828184FFD00963F04 /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
 		3981621D2818539900963F04 /* RestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestBuilder.swift; sourceTree = "<group>"; };
 		3981621F281853B700963F04 /* RestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestViewController.swift; sourceTree = "<group>"; };
 		398162232818542300963F04 /* RestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPresenter.swift; sourceTree = "<group>"; };
@@ -59,6 +90,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		39447C79281AFC330058A7A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3962A1E727DCA40500358C48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,10 +132,9 @@
 		284CC14F27FF7F4F00878E8E /* ListenModule */ = {
 			isa = PBXGroup;
 			children = (
-				3981621828184FFD00963F04 /* ListenBuilder.swift */,
-				3981620D2818424D00963F04 /* Model */,
-				3981620E2818425400963F04 /* View */,
-				3981620F2818425E00963F04 /* Presenter */,
+				3981621828184FFD00963F04 /* MainBuilder.swift */,
+				395BB26A281A9DF800D99640 /* MainScreen */,
+				395BB26C281A9E2000D99640 /* DetailScreen */,
 			);
 			path = ListenModule;
 			sourceTree = "<group>";
@@ -123,10 +160,82 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		39447C7D281AFC330058A7A5 /* SleepAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				39447C7E281AFC330058A7A5 /* SleepAppTests.swift */,
+				39447C85281AFEC50058A7A5 /* ListenModuleTests.swift */,
+			);
+			path = SleepAppTests;
+			sourceTree = "<group>";
+		};
+		395BB26A281A9DF800D99640 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3981620D2818424D00963F04 /* Model */,
+				3981620E2818425400963F04 /* View */,
+				3981620F2818425E00963F04 /* Presenter */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		395BB26C281A9E2000D99640 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				395BB26F281A9E6A00D99640 /* Model */,
+				395BB26E281A9E6600D99640 /* View */,
+				395BB26D281A9E5E00D99640 /* Presenter */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		395BB26D281A9E5E00D99640 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				392026AF281AC83F000D0618 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		395BB26E281A9E6600D99640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				395BB274281A9F1F00D99640 /* ViewController */,
+				395BB275281A9F2C00D99640 /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		395BB26F281A9E6A00D99640 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		395BB274281A9F1F00D99640 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				395BB270281A9EBF00D99640 /* DetailViewController.swift */,
+				392026B1281ADFD5000D0618 /* DetailViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		395BB275281A9F2C00D99640 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				395BB278281A9F7000D99640 /* DetailTableViewCell.swift */,
+				395BB279281A9F7000D99640 /* DetailTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		3962A1E127DCA40500358C48 = {
 			isa = PBXGroup;
 			children = (
 				3962A1EC27DCA40500358C48 /* SleepApp */,
+				39447C7D281AFC330058A7A5 /* SleepAppTests */,
 				3962A1EB27DCA40500358C48 /* Products */,
 				92BFCF53760EC96E8C625F8A /* Pods */,
 				54E926CE1F54248C16332E3D /* Frameworks */,
@@ -137,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				3962A1EA27DCA40500358C48 /* SleepApp.app */,
+				39447C7C281AFC330058A7A5 /* SleepAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +263,24 @@
 				39224AF127EB6795005CC973 /* Resources */,
 			);
 			path = SleepApp;
+			sourceTree = "<group>";
+		};
+		397A997B2819BAE10028E880 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39816210281842B600963F04 /* MainViewController.swift */,
+				397A99772819AF180028E880 /* MainViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		397A997C2819BAFD0028E880 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				39447C64281AE8C60058A7A5 /* MainTableViewCell.swift */,
+				39447C65281AE8C60058A7A5 /* MainTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		3981620628170CC900963F04 /* View */ = {
@@ -182,6 +310,7 @@
 		3981620D2818424D00963F04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				397A99752819A8700028E880 /* ContentStructures.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,8 +318,8 @@
 		3981620E2818425400963F04 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				39816211281842B600963F04 /* ListenViewController.xib */,
-				39816210281842B600963F04 /* ListenViewController.swift */,
+				397A997B2819BAE10028E880 /* ViewController */,
+				397A997C2819BAFD0028E880 /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,7 +327,7 @@
 		3981620F2818425E00963F04 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				398162142818438000963F04 /* ListenPresenter.swift */,
+				398162142818438000963F04 /* MainPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -271,6 +400,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		39447C7B281AFC330058A7A5 /* SleepAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39447C82281AFC330058A7A5 /* Build configuration list for PBXNativeTarget "SleepAppTests" */;
+			buildPhases = (
+				39447C78281AFC330058A7A5 /* Sources */,
+				39447C79281AFC330058A7A5 /* Frameworks */,
+				39447C7A281AFC330058A7A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39447C81281AFC330058A7A5 /* PBXTargetDependency */,
+			);
+			name = SleepAppTests;
+			productName = SleepAppTests;
+			productReference = 39447C7C281AFC330058A7A5 /* SleepAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3962A1E927DCA40500358C48 /* SleepApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3962A1FE27DCA40600358C48 /* Build configuration list for PBXNativeTarget "SleepApp" */;
@@ -297,9 +444,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					39447C7B281AFC330058A7A5 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3962A1E927DCA40500358C48;
+					};
 					3962A1E927DCA40500358C48 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -319,11 +470,19 @@
 			projectRoot = "";
 			targets = (
 				3962A1E927DCA40500358C48 /* SleepApp */,
+				39447C7B281AFC330058A7A5 /* SleepAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		39447C7A281AFC330058A7A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3962A1E827DCA40500358C48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,8 +490,11 @@
 				398162352818650200963F04 /* ProfileViewController.xib in Resources */,
 				3962A1FA27DCA40600358C48 /* LaunchScreen.storyboard in Resources */,
 				398162372818670300963F04 /* RestViewController.xib in Resources */,
-				39816213281842B600963F04 /* ListenViewController.xib in Resources */,
+				397A99782819AF180028E880 /* MainViewController.xib in Resources */,
+				39447C67281AE8C60058A7A5 /* MainTableViewCell.xib in Resources */,
 				3981622D2818556D00963F04 /* View.xib in Resources */,
+				395BB27B281A9F7000D99640 /* DetailTableViewCell.xib in Resources */,
+				392026B2281ADFD5000D0618 /* DetailViewController.xib in Resources */,
 				3962A1F727DCA40600358C48 /* Assets.xcassets in Resources */,
 				3981621728184A2700963F04 /* InfoViewController.xib in Resources */,
 			);
@@ -383,28 +545,50 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		39447C78281AFC330058A7A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39447C86281AFEC50058A7A5 /* ListenModuleTests.swift in Sources */,
+				39447C7F281AFC330058A7A5 /* SleepAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3962A1E627DCA40500358C48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395BB27A281A9F7000D99640 /* DetailTableViewCell.swift in Sources */,
 				3962A1EE27DCA40500358C48 /* AppDelegate.swift in Sources */,
+				395BB272281A9EBF00D99640 /* DetailViewController.swift in Sources */,
+				39447C66281AE8C60058A7A5 /* MainTableViewCell.swift in Sources */,
 				398162032817094F00963F04 /* InfoPresenter.swift in Sources */,
 				39816221281853B700963F04 /* RestViewController.swift in Sources */,
 				3981621E2818539900963F04 /* RestBuilder.swift in Sources */,
 				3981620A281712A300963F04 /* InfoViewController.swift in Sources */,
 				3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */,
 				3981622A2818552400963F04 /* ProfileViewController.swift in Sources */,
-				3981621928184FFD00963F04 /* ListenBuilder.swift in Sources */,
-				398162152818438000963F04 /* ListenPresenter.swift in Sources */,
+				392026B0281AC83F000D0618 /* DetailPresenter.swift in Sources */,
+				3981621928184FFD00963F04 /* MainBuilder.swift in Sources */,
+				398162152818438000963F04 /* MainPresenter.swift in Sources */,
 				3981620C2817132D00963F04 /* InfoBuilder.swift in Sources */,
 				398162242818542300963F04 /* RestPresenter.swift in Sources */,
-				39816212281842B600963F04 /* ListenViewController.swift in Sources */,
+				39816212281842B600963F04 /* MainViewController.swift in Sources */,
 				3981622F281855E500963F04 /* ProfilePresenter.swift in Sources */,
 				398162312818561500963F04 /* ProfileBuilder.swift in Sources */,
+				397A99762819A8700028E880 /* ContentStructures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39447C81281AFC330058A7A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3962A1E927DCA40500358C48 /* SleepApp */;
+			targetProxy = 39447C80281AFC330058A7A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3962A1F827DCA40600358C48 /* LaunchScreen.storyboard */ = {
@@ -418,6 +602,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		39447C83281AFC330058A7A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JXHDBN22D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITIS.SleepAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SleepApp.app/SleepApp";
+			};
+			name = Debug;
+		};
+		39447C84281AFC330058A7A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2JXHDBN22D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITIS.SleepAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SleepApp.app/SleepApp";
+			};
+			name = Release;
+		};
 		3962A1FC27DCA40600358C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -597,6 +819,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		39447C82281AFC330058A7A5 /* Build configuration list for PBXNativeTarget "SleepAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39447C83281AFC330058A7A5 /* Debug */,
+				39447C84281AFC330058A7A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3962A1E527DCA40500358C48 /* Build configuration list for PBXProject "SleepApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
