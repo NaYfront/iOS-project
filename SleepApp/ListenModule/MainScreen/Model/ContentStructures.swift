@@ -2,20 +2,24 @@
 //  ListenContent.swift
 //  SleepApp
 //
-//  Created by NaYfront on 27.04.2022.
+//  Created by NaYfront on 06.04.2022.
 //
 
 import Foundation
 import UIKit
 
-struct ModuleContent {
+struct MainContent {
     let title: String
     let color: UIColor
-    let content: [ListenContent]
+    let detailContent: [DetailContent]
 }
 
-struct ListenContent {
+struct DetailContent {
     let author: String
     let title: String
-    let text: String?
+    let image: UIImage
+}
+
+struct PageContent {
+    
 }

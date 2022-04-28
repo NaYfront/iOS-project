@@ -9,7 +9,8 @@ import UIKit
 
 protocol ListenBuilder {
     static func createListenFirstScreen() -> UINavigationController
-    static func createModuleContent() -> [ModuleContent]
+    static func createListenSecondScreen(detailContent: [DetailContent]) -> UIViewController
+    static func createModuleContent() -> [MainContent]
 }
 
 class ListenModuleBuilder: ListenBuilder {
@@ -21,15 +22,38 @@ class ListenModuleBuilder: ListenBuilder {
         view.tabBarItem = UITabBarItem(title: "Listen", image: UIImage(systemName: "headphones"), tag: 0)
         view.title = "Listen"
         
-        return UINavigationController(rootViewController: view)
+        let nav = UINavigationController(rootViewController: view)
+        
+        return nav
     }
     
-    static func createModuleContent() -> [ModuleContent] {
-        let listenContent =
-        [ListenContent(author: "Petr Petrov", title: "Relaxing Sounds", text: nil),
-         ListenContent(author: "Artem Artemov", title: "Very Relaxing Sounds", text: nil)]
+    static func createListenSecondScreen(detailContent: [DetailContent]) -> UIViewController {
+        let view = DetailViewController()
+        let presenter = DetailPresenter(view: view, detailContent: detailContent)
+        view.presenter = presenter
+
+        return view
+    }
+    
+    static func createModuleContent() -> [MainContent] {
+        let asmrDetailContent =
+        [DetailContent(author: "Petr Petrov", title: "Relaxing Sounds", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage()),
+         DetailContent(author: "Artem Artemov", title: "Very Relaxing Sounds", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage()),
+         DetailContent(author: "Igor Igorev", title: "Ultra Relaxing Sounds", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage())]
         
-        return [ModuleContent(title: "ASMR", color: UIColor(named: "iceGreen") ?? .white, content: listenContent),
-                ModuleContent(title: "ASMR", color: UIColor(named: "iceGreen") ?? .white, content: listenContent)]
+        let fairytalesDetailContent =
+        [DetailContent(author: "John Ronald Reuel Tolkien", title: "The Lord of the Rings", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage()),
+         DetailContent(author: "Jane Austen", title: "Pride and Prejudice", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage()),
+         DetailContent(author: "Philip Nicholas Outram Pullman", title: "His Dark Materials", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage())]
+        
+        let literatureDetailContent =
+        [DetailContent(author: "Petr Petrov", title: "Relaxing Sounds", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage()),
+         DetailContent(author: "Artem Artemov", title: "Very Relaxing Sounds", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage()),
+         DetailContent(author: "Igor Igorev", title: "Ultra Relaxing Sounds", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage())]
+        
+        return [MainContent(title: "ASMR", color: UIColor(named: "iceGreen") ?? .white, detailContent: asmrDetailContent),
+                MainContent(title: "Fairy Tales", color: UIColor(named: "deepBlue") ?? .white, detailContent: fairytalesDetailContent),
+                MainContent(title: "Literature", color: UIColor(named: "deepPurple") ?? .white, detailContent: literatureDetailContent),
+                MainContent(title: "Something", color: .yellow, detailContent: asmrDetailContent)]
     }
 }

@@ -9,19 +9,18 @@ import Foundation
 import UIKit
 
 protocol ListenViewProtocol: AnyObject {
-    func setGreeting(greeting: String)
 }
 
 protocol ListenViewPresenterProtocol: AnyObject {
-    init(view: ListenViewProtocol, content: [ModuleContent])
-    var content: [ModuleContent] { get set }
+    init(view: ListenViewProtocol, content: [MainContent])
+    var content: [MainContent] { get set }
 }
 
 class ListenPresenter: ListenViewPresenterProtocol {
-    let view: ListenViewProtocol
-    var content: [ModuleContent]
+    weak var view: ListenViewProtocol?
+    var content: [MainContent]
     
-    required init(view: ListenViewProtocol, content: [ModuleContent]) {
+    required init(view: ListenViewProtocol, content: [MainContent]) {
         self.view = view
         self.content = content
     }
