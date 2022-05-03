@@ -15,7 +15,6 @@ protocol RouterMain {
 protocol RouterProtocol: RouterMain {
     func initialViewController()
     func showDetailViewController(detailContent: [DetailContent])
-    func popToRoot()
 }
 
 class Router: RouterProtocol {
@@ -38,12 +37,6 @@ class Router: RouterProtocol {
         if let navigationController = navigationController {
             guard let detailViewController = assemblyBuilder?.createListenSecondScreen(detailContent: detailContent, router: self) else { return }
             navigationController.pushViewController(detailViewController, animated: true)
-        }
-    }
-    
-    func popToRoot() {
-        if let navigationController = navigationController {
-            navigationController.popToRootViewController(animated: true)
         }
     }
 }

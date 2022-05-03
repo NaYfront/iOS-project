@@ -12,7 +12,7 @@
 		39447C66281AE8C60058A7A5 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39447C64281AE8C60058A7A5 /* MainTableViewCell.swift */; };
 		39447C67281AE8C60058A7A5 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39447C65281AE8C60058A7A5 /* MainTableViewCell.xib */; };
 		39447C7F281AFC330058A7A5 /* SleepAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39447C7E281AFC330058A7A5 /* SleepAppTests.swift */; };
-		39447C86281AFEC50058A7A5 /* ListenModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39447C85281AFEC50058A7A5 /* ListenModuleTests.swift */; };
+		39447C86281AFEC50058A7A5 /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39447C85281AFEC50058A7A5 /* PresenterTests.swift */; };
 		395BB272281A9EBF00D99640 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395BB270281A9EBF00D99640 /* DetailViewController.swift */; };
 		395BB27A281A9F7000D99640 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395BB278281A9F7000D99640 /* DetailTableViewCell.swift */; };
 		395BB27B281A9F7000D99640 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395BB279281A9F7000D99640 /* DetailTableViewCell.xib */; };
@@ -39,6 +39,7 @@
 		398162352818650200963F04 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398162342818650200963F04 /* ProfileViewController.xib */; };
 		398162372818670300963F04 /* RestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398162362818670300963F04 /* RestViewController.xib */; };
 		39BE29552821294F00AD7AF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE29542821294F00AD7AF5 /* Router.swift */; };
+		39BE2957282148BE00AD7AF5 /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2956282148BE00AD7AF5 /* RouterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +59,7 @@
 		39447C65281AE8C60058A7A5 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		39447C7C281AFC330058A7A5 /* SleepAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39447C7E281AFC330058A7A5 /* SleepAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAppTests.swift; sourceTree = "<group>"; };
-		39447C85281AFEC50058A7A5 /* ListenModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenModuleTests.swift; sourceTree = "<group>"; };
+		39447C85281AFEC50058A7A5 /* PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
 		395BB270281A9EBF00D99640 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		395BB278281A9F7000D99640 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		395BB279281A9F7000D99640 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		398162342818650200963F04 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		398162362818670300963F04 /* RestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestViewController.xib; sourceTree = "<group>"; };
 		39BE29542821294F00AD7AF5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		39BE2956282148BE00AD7AF5 /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 		D3DCDE08DD9B1CBE13F0B82E /* Pods-SleepApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepApp.debug.xcconfig"; path = "Target Support Files/Pods-SleepApp/Pods-SleepApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED1E3905E7810792DD46DEDA /* Pods-SleepApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepApp.release.xcconfig"; path = "Target Support Files/Pods-SleepApp/Pods-SleepApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,7 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				39447C7E281AFC330058A7A5 /* SleepAppTests.swift */,
-				39447C85281AFEC50058A7A5 /* ListenModuleTests.swift */,
+				39447C85281AFEC50058A7A5 /* PresenterTests.swift */,
+				39BE2956282148BE00AD7AF5 /* RouterTest.swift */,
 			);
 			path = SleepAppTests;
 			sourceTree = "<group>";
@@ -552,7 +555,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39447C86281AFEC50058A7A5 /* ListenModuleTests.swift in Sources */,
+				39447C86281AFEC50058A7A5 /* PresenterTests.swift in Sources */,
+				39BE2957282148BE00AD7AF5 /* RouterTest.swift in Sources */,
 				39447C7F281AFC330058A7A5 /* SleepAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
