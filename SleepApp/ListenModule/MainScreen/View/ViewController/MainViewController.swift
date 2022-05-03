@@ -20,10 +20,6 @@ class MainViewController: UIViewController, MainViewProtocol {
         
         mainTableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "mainCell")
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        viewDidLoad()
-    }
 }
 
 // MARK: - Table View Data Source
@@ -47,9 +43,7 @@ extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let detailContent = presenter.content[indexPath.row].detailContent
-        let detailVC = MainModuleBuilder.createListenSecondScreen(detailContent: detailContent)
-        
-        navigationController?.pushViewController(detailVC, animated: true)
+        presenter.tapOnTheView(detailContent: detailContent)
         
     }
 }

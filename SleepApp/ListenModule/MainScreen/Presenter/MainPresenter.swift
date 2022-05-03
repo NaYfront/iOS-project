@@ -12,18 +12,25 @@ protocol MainViewProtocol: AnyObject {
 }
 
 protocol MainViewPresenterProtocol: AnyObject {
-    init(view: MainViewProtocol, content: [MainContent])
+    init(view: MainViewProtocol, content: [MainContent], router: RouterProtocol)
     var content: [MainContent] { get set }
+    func tapOnTheView(detailContent: [DetailContent])
 }
 
 class MainPresenter: MainViewPresenterProtocol {
     // MARK: - Properties
     weak var view: MainViewProtocol?
+    var router: RouterProtocol?
     var content: [MainContent]
     
     // MARK: - Init
-    required init(view: MainViewProtocol, content: [MainContent]) {
+    required init(view: MainViewProtocol, content: [MainContent], router: RouterProtocol) {
         self.view = view
         self.content = content
+        self.router = router
+    }
+    
+    func tapOnTheView(detailContent: [DetailContent]) {
+        router?.showDetailViewController(detailContent: detailContent)
     }
 }
