@@ -28,7 +28,7 @@
 		39816212281842B600963F04 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39816210281842B600963F04 /* MainViewController.swift */; };
 		398162152818438000963F04 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162142818438000963F04 /* MainPresenter.swift */; };
 		3981621728184A2700963F04 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3981621628184A2700963F04 /* InfoViewController.xib */; };
-		3981621928184FFD00963F04 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621828184FFD00963F04 /* MainBuilder.swift */; };
+		3981621928184FFD00963F04 /* AssemblyBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621828184FFD00963F04 /* AssemblyBuilderProtocol.swift */; };
 		3981621E2818539900963F04 /* RestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621D2818539900963F04 /* RestBuilder.swift */; };
 		39816221281853B700963F04 /* RestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621F281853B700963F04 /* RestViewController.swift */; };
 		398162242818542300963F04 /* RestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162232818542300963F04 /* RestPresenter.swift */; };
@@ -38,6 +38,7 @@
 		398162312818561500963F04 /* ProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162302818561500963F04 /* ProfileBuilder.swift */; };
 		398162352818650200963F04 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398162342818650200963F04 /* ProfileViewController.xib */; };
 		398162372818670300963F04 /* RestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398162362818670300963F04 /* RestViewController.xib */; };
+		39BE29552821294F00AD7AF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE29542821294F00AD7AF5 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +76,7 @@
 		39816210281842B600963F04 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		398162142818438000963F04 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		3981621628184A2700963F04 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
-		3981621828184FFD00963F04 /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		3981621828184FFD00963F04 /* AssemblyBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilderProtocol.swift; sourceTree = "<group>"; };
 		3981621D2818539900963F04 /* RestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestBuilder.swift; sourceTree = "<group>"; };
 		3981621F281853B700963F04 /* RestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestViewController.swift; sourceTree = "<group>"; };
 		398162232818542300963F04 /* RestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPresenter.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		398162302818561500963F04 /* ProfileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBuilder.swift; sourceTree = "<group>"; };
 		398162342818650200963F04 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		398162362818670300963F04 /* RestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestViewController.xib; sourceTree = "<group>"; };
+		39BE29542821294F00AD7AF5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		D3DCDE08DD9B1CBE13F0B82E /* Pods-SleepApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepApp.debug.xcconfig"; path = "Target Support Files/Pods-SleepApp/Pods-SleepApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED1E3905E7810792DD46DEDA /* Pods-SleepApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepApp.release.xcconfig"; path = "Target Support Files/Pods-SleepApp/Pods-SleepApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,7 +134,8 @@
 		284CC14F27FF7F4F00878E8E /* ListenModule */ = {
 			isa = PBXGroup;
 			children = (
-				3981621828184FFD00963F04 /* MainBuilder.swift */,
+				3981621828184FFD00963F04 /* AssemblyBuilderProtocol.swift */,
+				39BE29542821294F00AD7AF5 /* Router.swift */,
 				395BB26A281A9DF800D99640 /* MainScreen */,
 				395BB26C281A9E2000D99640 /* DetailScreen */,
 			);
@@ -569,7 +572,8 @@
 				3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */,
 				3981622A2818552400963F04 /* ProfileViewController.swift in Sources */,
 				392026B0281AC83F000D0618 /* DetailPresenter.swift in Sources */,
-				3981621928184FFD00963F04 /* MainBuilder.swift in Sources */,
+				3981621928184FFD00963F04 /* AssemblyBuilderProtocol.swift in Sources */,
+				39BE29552821294F00AD7AF5 /* Router.swift in Sources */,
 				398162152818438000963F04 /* MainPresenter.swift in Sources */,
 				3981620C2817132D00963F04 /* InfoBuilder.swift in Sources */,
 				398162242818542300963F04 /* RestPresenter.swift in Sources */,

@@ -12,18 +12,20 @@ protocol DetailViewProtocol: AnyObject {
 }
 
 protocol DetailViewPresenterProtocol {
-    init(view: DetailViewProtocol, detailContent: [DetailContent])
+    init(view: DetailViewProtocol, router: RouterProtocol, detailContent: [DetailContent])
     var detailContent: [DetailContent] { get set }
 }
 
 class DetailPresenter: DetailViewPresenterProtocol {
     // MARK: - Properties
     weak var view: DetailViewProtocol?
+    var router: RouterProtocol?
     var detailContent: [DetailContent]
     
     // MARK: - Init
-    required init(view: DetailViewProtocol, detailContent: [DetailContent]) {
+    required init(view: DetailViewProtocol, router: RouterProtocol, detailContent: [DetailContent]) {
         self.view = view
+        self.router = router
         self.detailContent = detailContent
     }
 }

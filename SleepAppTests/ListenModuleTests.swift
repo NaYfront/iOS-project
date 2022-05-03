@@ -21,9 +21,9 @@ class ListenModuleTests: XCTestCase {
     
     override func setUpWithError() throws {
         view = MockView()
-        content = MainModuleBuilder.createModuleContent()
+        content = MainModuleAssemblyBuilder.createModuleContent()
         presenter = MainPresenter(view: view, content: content)
-        vc = MainModuleBuilder.createListenFirstScreen()
+        vc = MainModuleAssemblyBuilder.createListenFirstScreen()
         mvc = MainViewController()
     }
 
