@@ -38,7 +38,7 @@
                     <rect key="frame" x="0.0" y="80" width="390" height="200"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac6-dk-vcE">
-                            <rect key="frame" x="0.0" y="0.0" width="1035" height="200"/>
+                            <rect key="frame" x="0.0" y="0.0" width="1034" height="200"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8r5-59-iyL">
                                     <rect key="frame" x="20" y="12" width="305" height="176"/>
@@ -51,7 +51,7 @@
                                     <buttonConfiguration key="configuration" style="plain"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQO-4A-yBL">
-                                    <rect key="frame" x="365" y="12" width="305" height="176"/>
+                                    <rect key="frame" x="364" y="12" width="305" height="176"/>
                                     <color key="backgroundColor" red="0.1137254902" green="0.76470588240000004" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="176" id="0TH-yZ-k8t"/>
@@ -61,7 +61,7 @@
                                     <buttonConfiguration key="configuration" style="plain"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i74-39-KF7">
-                                    <rect key="frame" x="710" y="12" width="305" height="176"/>
+                                    <rect key="frame" x="709" y="12" width="305" height="176"/>
                                     <color key="backgroundColor" red="0.1137254902" green="0.76470588240000004" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="305" id="45M-yb-T5u"/>
@@ -78,7 +78,7 @@
                                 <constraint firstItem="i74-39-KF7" firstAttribute="top" secondItem="ac6-dk-vcE" secondAttribute="top" constant="12" id="Fe0-wP-jLS"/>
                                 <constraint firstAttribute="trailing" secondItem="i74-39-KF7" secondAttribute="trailing" constant="20" id="MqP-9U-JLI"/>
                                 <constraint firstItem="8r5-59-iyL" firstAttribute="leading" secondItem="ac6-dk-vcE" secondAttribute="leading" constant="20" id="RY5-wA-sYN"/>
-                                <constraint firstItem="sQO-4A-yBL" firstAttribute="leading" secondItem="8r5-59-iyL" secondAttribute="trailing" constant="40" id="WbZ-Qb-vB1"/>
+                                <constraint firstItem="sQO-4A-yBL" firstAttribute="leading" secondItem="8r5-59-iyL" secondAttribute="trailing" constant="39" id="WbZ-Qb-vB1"/>
                                 <constraint firstItem="sQO-4A-yBL" firstAttribute="top" secondItem="ac6-dk-vcE" secondAttribute="top" constant="12" id="gQt-WP-7zq"/>
                                 <constraint firstItem="i74-39-KF7" firstAttribute="leading" secondItem="sQO-4A-yBL" secondAttribute="trailing" constant="40" id="hT1-wO-S8q"/>
                                 <constraint firstAttribute="bottom" secondItem="i74-39-KF7" secondAttribute="bottom" constant="12" id="kTH-NI-yOa"/>

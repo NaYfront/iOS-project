@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SleepDurationTime" representedClassName="SleepDurationTime" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sleepDurationTime" optional="YES" attributeType="Transformable" valueTransformerName="TimeTransformer" customClassName="Time"/>
+    </entity>
+    <entity name="SleepTime" representedClassName="SleepTime" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sleepTime" optional="YES" attributeType="Transformable" valueTransformerName="TimeTransformer" customClassName="Time"/>
+    </entity>
+    <entity name="WakeTime" representedClassName="WakeTime" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="wakeTime" optional="YES" attributeType="Transformable" valueTransformerName="SleepApp.TimeTransformer" customClassName="Time"/>
+    </entity>
+    <elements>
+        <element name="SleepDurationTime" positionX="27" positionY="72" width="128" height="59"/>
+        <element name="SleepTime" positionX="-36" positionY="9" width="128" height="59"/>
+        <element name="WakeTime" positionX="0" positionY="45" width="128" height="59"/>
+    </elements>
+</model>

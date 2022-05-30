@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 protocol RestBuilder {
     static func createRestFirstScreen() -> UIViewController
@@ -14,8 +15,8 @@ protocol RestBuilder {
 class RestModuleBuilder: RestBuilder {
     static func createRestFirstScreen() -> UIViewController {
         let view = RestViewController()
-        let presenter = RestPresenter(view: view)
-        view.presenter = presenter
+        let presenter = RestViewPresenter(view: view, user: User(preferableWakeTime: Time(hours: 0, minutes: 0)))
+        view.restViewPresenter = presenter
         
         view.tabBarItem = UITabBarItem(title: "Rest", image: UIImage(systemName: "moon.fill"), tag: 0)
         
