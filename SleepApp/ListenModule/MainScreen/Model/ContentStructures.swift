@@ -18,8 +18,21 @@ struct DetailContent {
     let author: String
     let title: String
     let image: UIImage
+    let listenContent: ListenContent
 }
 
-struct PageContent {
-    
+struct ListenContent {
+    let author: String
+    let title: String
+    let image: UIImage
+    let images: [UIImage]
+    let text: String
+}
+
+struct Comment: Decodable {
+    var postId: Int
+    var id: Int
+    var name: String
+    var email: String
+    var body: String
 }

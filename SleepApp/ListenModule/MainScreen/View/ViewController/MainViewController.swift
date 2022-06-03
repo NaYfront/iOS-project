@@ -34,6 +34,10 @@ extension MainViewController: UITableViewDataSource {
         cell.mainView.backgroundColor = presenter.content[indexPath.row].color
         cell.viewLabel.text = presenter.content[indexPath.row].title
         
+        let animation = TableAnimationFactory.makeConstriction(rowHeight: 26, duration: 0.85, delayFactor: 0.05)
+        let animator = TableViewAnimator(animation: animation)
+        animator.animate(cell: cell, at: indexPath, in: tableView)
+        
         return cell
     }
 }
@@ -42,6 +46,7 @@ extension MainViewController: UITableViewDataSource {
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
         let detailContent = presenter.content[indexPath.row].detailContent
         presenter.tapOnTheView(detailContent: detailContent)
         

@@ -39,3 +39,14 @@ extension DetailViewController: UITableViewDataSource {
         return cell
     }
 }
+
+// MARK: - Table View Delegate
+extension DetailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let listenContent = presenter.detailContent[indexPath.row].listenContent
+        presenter.tapOnTheView(listenContent: listenContent)
+        
+    }
+}

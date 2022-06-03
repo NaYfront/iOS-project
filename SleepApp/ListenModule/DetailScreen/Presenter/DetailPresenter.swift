@@ -14,9 +14,11 @@ protocol DetailViewProtocol: AnyObject {
 protocol DetailViewPresenterProtocol {
     init(view: DetailViewProtocol, router: RouterProtocol, detailContent: [DetailContent])
     var detailContent: [DetailContent] { get set }
+    func tapOnTheView(listenContent: ListenContent)
 }
 
 class DetailPresenter: DetailViewPresenterProtocol {
+    
     // MARK: - Properties
     weak var view: DetailViewProtocol?
     var router: RouterProtocol?
@@ -27,5 +29,9 @@ class DetailPresenter: DetailViewPresenterProtocol {
         self.view = view
         self.router = router
         self.detailContent = detailContent
+    }
+    
+    func tapOnTheView(listenContent: ListenContent) {
+        router?.showListenViewController(listenContent: listenContent)
     }
 }
