@@ -6,10 +6,7 @@
 //
 
 import Foundation
-
-protocol ProfileViewProtocol: AnyObject {
-    func setGreeting(greeting: String)
-}
+import Charts
 
 protocol ProfileViewPresenterProtocol: AnyObject {
     init(view: ProfileViewProtocol)
