@@ -14,9 +14,12 @@
             <connections>
                 <outlet property="authorLabel" destination="kA1-mR-mS2" id="oQh-LE-MX6"/>
                 <outlet property="firstImage" destination="zGP-iI-vqF" id="Gxf-WV-wDK"/>
+                <outlet property="firstImageWidthConstraint" destination="LvZ-Kl-8f1" id="ugJ-Vb-UOZ"/>
                 <outlet property="secondImage" destination="Fo8-bx-hTa" id="Tbm-JQ-Yws"/>
+                <outlet property="secondImageWidthConstraint" destination="eHT-Pl-Rup" id="qWI-er-54q"/>
                 <outlet property="textLabel" destination="3z2-o5-pcK" id="mis-sD-fS9"/>
                 <outlet property="thirdImage" destination="ZCx-6E-irA" id="NF4-xX-0Y4"/>
+                <outlet property="thirdImageWidthConstraint" destination="Wiv-MV-8D6" id="L1x-nt-swq"/>
                 <outlet property="view" destination="YBN-xR-57e" id="zhO-mf-Vxd"/>
             </connections>
         </placeholder>
@@ -146,7 +149,7 @@
                                             </buttonConfiguration>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="25"/>
+                                                    <integer key="value" value="15"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
@@ -232,7 +235,7 @@
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="darkBlue">
-            <color red="0.094117647058823528" green="0.10196078431372549" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.093999996781349182" green="0.10199999809265137" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="iceGreen">
             <color red="0.11400000005960464" green="0.76499998569488525" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

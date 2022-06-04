@@ -42,7 +42,7 @@
     </objects>
     <resources>
         <namedColor name="darkBlue">
-            <color red="0.094117647058823528" green="0.10196078431372549" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.093999996781349182" green="0.10199999809265137" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
