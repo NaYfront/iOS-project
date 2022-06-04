@@ -23,6 +23,18 @@ class Router: RouterProtocol {
     var assemblyBuilder: AssemblyBuilderProtocol?
     
     init(navigationController: UINavigationController, assemblyBuilder: AssemblyBuilderProtocol) {
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.shadowColor = .clear
+        appearance.backgroundColor = UIColor(named: "darkBlue")
+        appearance.titleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 20.0),
+                                          .foregroundColor: UIColor.white]
+
+        navigationController.navigationBar.tintColor = .white
+        navigationController.navigationBar.standardAppearance = appearance
+        navigationController.navigationBar.scrollEdgeAppearance = appearance
+        
         self.navigationController = navigationController
         self.assemblyBuilder = assemblyBuilder
     }
@@ -31,6 +43,7 @@ class Router: RouterProtocol {
         if let navigationController = navigationController {
             guard let mainViewController = assemblyBuilder?.createListenFirstScreen(router: self) else { return }
             navigationController.viewControllers = [mainViewController]
+            navigationController.viewControllers[0].title = "Listen"
         }
     }
     

@@ -28,7 +28,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         router.initialViewController()
         
         let tabBarController = UITabBarController()
+        
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "darkBlue")
+
+        tabBarController.tabBar.standardAppearance = appearance
+        tabBarController.tabBar.scrollEdgeAppearance = appearance
         tabBarController.tabBar.tintColor = UIColor(named: "iceGreen")
+        tabBarController.tabBar.backgroundColor = UIColor(named: "darkBlue")
         tabBarController.viewControllers = [restVC, infoVC, listenVC, profileVC]
         
         window?.rootViewController = tabBarController

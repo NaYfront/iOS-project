@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="R2d-YL-ilq">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="R2d-YL-ilq">
                     <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                     <color key="backgroundColor" red="0.070588235289999995" green="0.078431372550000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="sectionIndexBackgroundColor" red="0.070588235289999995" green="0.078431372550000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,7 +30,7 @@
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" red="0.070588235289999995" green="0.078431372550000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" name="darkBlue"/>
             <constraints>
                 <constraint firstItem="R2d-YL-ilq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EHo-W5-4Iu"/>
                 <constraint firstItem="R2d-YL-ilq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Nbz-EY-vTa"/>
@@ -39,4 +40,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="darkBlue">
+            <color red="0.094117647058823528" green="0.10196078431372549" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

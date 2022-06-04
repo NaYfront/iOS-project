@@ -25,7 +25,7 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CrH-44-lfP">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrH-44-lfP">
                     <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Suw-3W-vXt">
@@ -215,7 +215,7 @@
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="HWr-3W-5Lm"/>
-            <color key="backgroundColor" red="0.070588235289999995" green="0.078431372550000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" name="darkBlue"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="CrH-44-lfP" secondAttribute="bottom" id="7Bk-cT-D3m"/>
                 <constraint firstItem="CrH-44-lfP" firstAttribute="top" secondItem="YBN-xR-57e" secondAttribute="top" id="Glb-jZ-hsb"/>
@@ -230,6 +230,9 @@
         <image name="headphones" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkBlue">
+            <color red="0.094117647058823528" green="0.10196078431372549" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="iceGreen">
             <color red="0.11400000005960464" green="0.76499998569488525" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

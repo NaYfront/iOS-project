@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,12 +61,15 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="JFt-0j-JhH"/>
-            <color key="backgroundColor" red="0.070588235289999995" green="0.078431372550000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" name="darkBlue"/>
             <point key="canvasLocation" x="48" y="761"/>
         </view>
     </objects>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="loader" width="180" height="180"/>
+        <namedColor name="darkBlue">
+            <color red="0.094117647058823528" green="0.10196078431372549" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
