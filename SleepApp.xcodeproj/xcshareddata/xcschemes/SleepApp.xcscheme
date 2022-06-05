@@ -37,6 +37,11 @@
                BlueprintName = "GraphsUITests"
                ReferencedContainer = "container:SleepApp.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "GraphsUITestsLaunchTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

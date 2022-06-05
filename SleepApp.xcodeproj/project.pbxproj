@@ -10,8 +10,8 @@
 		282BAE8C2849018700F12C78 /* GraphDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BAE8B2849018700F12C78 /* GraphDataSource.swift */; };
 		282BAE9428494EC400F12C78 /* GraphsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BAE9328494EC400F12C78 /* GraphsUITests.swift */; };
 		282BAE9628494EC400F12C78 /* GraphsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BAE9528494EC400F12C78 /* GraphsUITestsLaunchTests.swift */; };
-		287ECEBA284D076900918BD7 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287ECEB8284D076900918BD7 /* User+CoreDataClass.swift */; };
-		287ECEBB284D076900918BD7 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287ECEB9284D076900918BD7 /* User+CoreDataProperties.swift */; };
+		287ECEC0284D1D8A00918BD7 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287ECEBE284D1D8A00918BD7 /* User+CoreDataClass.swift */; };
+		287ECEC1284D1D8A00918BD7 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287ECEBF284D1D8A00918BD7 /* User+CoreDataProperties.swift */; };
 		289B1EE8284199FD00CAAA1E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B1EE7284199FD00CAAA1E /* Extensions.swift */; };
 		289B1EEA28419A8E00CAAA1E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B1EE928419A8E00CAAA1E /* Time.swift */; };
 		289B1F06284407FC00CAAA1E /* UserHistoryData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 289B1F04284407FC00CAAA1E /* UserHistoryData.xcdatamodeld */; };
@@ -63,8 +63,8 @@
 		282BAE9128494EC400F12C78 /* GraphsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		282BAE9328494EC400F12C78 /* GraphsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsUITests.swift; sourceTree = "<group>"; };
 		282BAE9528494EC400F12C78 /* GraphsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		287ECEB8284D076900918BD7 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		287ECEB9284D076900918BD7 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		287ECEBE284D1D8A00918BD7 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		287ECEBF284D1D8A00918BD7 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		289B1EE7284199FD00CAAA1E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		289B1EE928419A8E00CAAA1E /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		289B1F05284407FC00CAAA1E /* UserHistoryData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserHistoryData.xcdatamodel; sourceTree = "<group>"; };
@@ -176,11 +176,27 @@
 			path = ProfileModule;
 			sourceTree = "<group>";
 		};
+		287ECEBC284D1D2100918BD7 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				28D2B495284BCD2A00551C1E /* NotificationHandler.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		287ECEBD284D1D3D00918BD7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				289B1EE7284199FD00CAAA1E /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		289B1EF12843F19600CAAA1E /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				287ECEB8284D076900918BD7 /* User+CoreDataClass.swift */,
-				287ECEB9284D076900918BD7 /* User+CoreDataProperties.swift */,
+				287ECEBE284D1D8A00918BD7 /* User+CoreDataClass.swift */,
+				287ECEBF284D1D8A00918BD7 /* User+CoreDataProperties.swift */,
 				289B1F072844089200CAAA1E /* WakeTime+CoreDataClass.swift */,
 				289B1F082844089200CAAA1E /* WakeTime+CoreDataProperties.swift */,
 				289B1F092844089200CAAA1E /* SleepTime+CoreDataClass.swift */,
@@ -222,7 +238,8 @@
 		3962A1E127DCA40500358C48 = {
 			isa = PBXGroup;
 			children = (
-				28D2B495284BCD2A00551C1E /* NotificationHandler.swift */,
+				287ECEBD284D1D3D00918BD7 /* Extensions */,
+				287ECEBC284D1D2100918BD7 /* Notifications */,
 				289B1EF12843F19600CAAA1E /* Core Data */,
 				3962A1EC27DCA40500358C48 /* SleepApp */,
 				282BAE9228494EC400F12C78 /* GraphsUITests */,
@@ -249,11 +266,10 @@
 				284CC14F27FF7F4F00878E8E /* ListenModule */,
 				284CC15027FF7F5A00878E8E /* ProfileModule */,
 				3962A1ED27DCA40500358C48 /* AppDelegate.swift */,
-				28DCB82D284569F5005868A2 /* Transformers */,
 				3962A1EF27DCA40500358C48 /* SceneDelegate.swift */,
+				28DCB82D284569F5005868A2 /* Transformers */,
 				39224AF127EB6795005CC973 /* Resources */,
 				28DCB82C284569E6005868A2 /* Models */,
-				289B1EE7284199FD00CAAA1E /* Extensions.swift */,
 			);
 			path = SleepApp;
 			sourceTree = "<group>";
@@ -541,8 +557,8 @@
 				289B1F0E2844089200CAAA1E /* WakeTime+CoreDataProperties.swift in Sources */,
 				3981620A281712A300963F04 /* InfoViewController.swift in Sources */,
 				28D2B496284BCD2B00551C1E /* NotificationHandler.swift in Sources */,
-				287ECEBB284D076900918BD7 /* User+CoreDataProperties.swift in Sources */,
-				287ECEBA284D076900918BD7 /* User+CoreDataClass.swift in Sources */,
+				287ECEC1284D1D8A00918BD7 /* User+CoreDataProperties.swift in Sources */,
+				287ECEC0284D1D8A00918BD7 /* User+CoreDataClass.swift in Sources */,
 				3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */,
 				289B1EEA28419A8E00CAAA1E /* Time.swift in Sources */,
 				3981622A2818552400963F04 /* ProfileViewController.swift in Sources */,
