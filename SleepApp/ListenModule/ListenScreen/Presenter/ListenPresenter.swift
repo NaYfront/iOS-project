@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol ListenViewProtocol: AnyObject {
-    func configure()
+    func changeImage(image: UIImage?, constraint: NSLayoutConstraint!, imageView: UIImageView!)
 }
 
 protocol ListenViewPresenterProtocol: AnyObject {

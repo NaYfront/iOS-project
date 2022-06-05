@@ -9,8 +9,7 @@ import UIKit
 
 class BigCellCollectionViewCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var mainTitleLabel: UILabel!
+    @IBOutlet weak var additionalTitleLabel: UILabel!
 }

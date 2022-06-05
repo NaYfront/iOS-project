@@ -13,7 +13,7 @@ protocol RouterMain {
 }
 
 protocol RouterProtocol: RouterMain {
-    func initialViewController()
+    func ListenMainViewController()
     func showDetailViewController(detailContent: [DetailContent])
     func showListenViewController(listenContent: ListenContent)
 }
@@ -39,7 +39,7 @@ class Router: RouterProtocol {
         self.assemblyBuilder = assemblyBuilder
     }
     
-    func initialViewController() {
+    func ListenMainViewController() {
         if let navigationController = navigationController {
             guard let mainViewController = assemblyBuilder?.createListenFirstScreen(router: self) else { return }
             navigationController.viewControllers = [mainViewController]

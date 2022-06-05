@@ -19,13 +19,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         let restVC = RestModuleBuilder.createRestFirstScreen()
-        let infoVC = InfoModuleBuilder.createInfoFirstScreen()
         let profileVC = ProfileModuleBuilder.createProfileFirstScreen()
+        
+        let infoVC = UINavigationController()
+        let infoBuilder = InfoModuleBuilder()
+        let infoRouter = InfoRouter(navigationController: infoVC, assemblyBuilder: infoBuilder)
+        infoRouter.InfoMainViewController()
         
         let listenVC = UINavigationController()
         let assemblyBuilder = MainModuleAssemblyBuilder()
-        let router = Router(navigationController: listenVC, assemblyBuilder: assemblyBuilder)
-        router.initialViewController()
+        let listenRouter = Router(navigationController: listenVC, assemblyBuilder: assemblyBuilder)
+        listenRouter.ListenMainViewController()
         
         let tabBarController = UITabBarController()
         

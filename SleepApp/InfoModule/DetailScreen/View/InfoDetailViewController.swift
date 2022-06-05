@@ -1,13 +1,13 @@
 //
-//  ListenViewController.swift
+//  InfoDetailViewController.swift
 //  SleepApp
 //
-//  Created by NaYfront on 27.05.2022.
+//  Created by NaYfront on 05.06.2022.
 //
 
 import UIKit
 
-class ListenViewController: UIViewController {
+class InfoDetailViewController: UIViewController {
 
     @IBOutlet var authorLabel: UILabel!
     @IBOutlet var firstImage: UIImageView!
@@ -19,7 +19,7 @@ class ListenViewController: UIViewController {
     @IBOutlet weak var secondImageWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var thirdImageWidthConstraint: NSLayoutConstraint!
     
-    var presenter: ListenViewPresenterProtocol!
+    var presenter: InfoDetailViewPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class ListenViewController: UIViewController {
     }
 }
 
-extension ListenViewController: ListenViewProtocol {
+extension InfoDetailViewController: InfoDetailViewProtocol {
     func changeImage(image: UIImage?, constraint: NSLayoutConstraint!, imageView: UIImageView!) {
         if image == nil {
             constraint.constant = 0

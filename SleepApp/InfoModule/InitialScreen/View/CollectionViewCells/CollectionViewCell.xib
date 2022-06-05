@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="150" height="125"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIC-I8-TQm">
-                                <rect key="frame" x="20" y="15" width="110" height="14.5"/>
+                                <rect key="frame" x="20" y="15" width="110" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -66,7 +66,6 @@
                             <constraint firstAttribute="trailing" secondItem="JIC-I8-TQm" secondAttribute="trailing" constant="20" symbolic="YES" id="kkx-E1-f3q"/>
                             <constraint firstAttribute="height" constant="125" id="mrN-y7-XL3"/>
                             <constraint firstItem="JIC-I8-TQm" firstAttribute="top" secondItem="OIB-22-T3C" secondAttribute="top" constant="15" id="nFD-7C-Y6u"/>
-                            <constraint firstItem="8Oq-yF-Y4d" firstAttribute="top" secondItem="JIC-I8-TQm" secondAttribute="bottom" constant="20.5" id="vyb-Xd-A8P"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -84,6 +83,10 @@
                 <constraint firstAttribute="bottom" secondItem="OIB-22-T3C" secondAttribute="bottom" id="sRb-bd-cfn"/>
             </constraints>
             <size key="customSize" width="183" height="181"/>
+            <connections>
+                <outlet property="mainTitleLabel" destination="JIC-I8-TQm" id="qkn-Ba-D3Q"/>
+                <outlet property="mainView" destination="OIB-22-T3C" id="mOJ-KT-MGT"/>
+            </connections>
             <point key="canvasLocation" x="208.69565217391306" y="137.61160714285714"/>
         </collectionViewCell>
     </objects>

@@ -9,30 +9,59 @@ import UIKit
 
 class InfoViewController: UIViewController, InfoViewProtocol {
 
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var additionalColectionView: UICollectionView!
+    @IBOutlet weak var mainCollectionView: UICollectionView!
     
     var presenter: InfoViewPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionCell")
+        mainCollectionView.register(UINib(nibName: "BigCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "BigCellCollectionViewCell")
+        additionalColectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionCell")
     }
+    
+    @IBAction func buttonAction(_ sender: Any) {
+    }
+    
 }
 
 extension InfoViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        if collectionView == mainCollectionView {
+            return 3
+        } else {
+            return 5
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionViewCell else { return UICollectionViewCell() }
-        
-        return cell
+        if collectionView == mainCollectionView {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BigCellCollectionViewCell", for: indexPath) as? BigCellCollectionViewCell else { return UICollectionViewCell() }
+            
+            cell.mainView.backgroundColor = presenter.cellContent.bigCellContent[indexPath.item].color
+            cell.mainTitleLabel.text = presenter.cellContent.bigCellContent[indexPath.item].mainTitle
+            cell.additionalTitleLabel.text = presenter.cellContent.bigCellContent[indexPath.item].additionalTitle
+            
+            return cell
+        } else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as? CollectionViewCell else { return UICollectionViewCell() }
+            
+            cell.mainView.backgroundColor = presenter.cellContent.smallCellContent[indexPath.row].color
+            cell.mainTitleLabel.text = presenter.cellContent.smallCellContent[indexPath.row].mainTitle
+            
+            return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let restVC = RestModuleBuilder.createRestFirstScreen()
-        navigationController?.pushViewController(restVC, animated: true)
+        
+        if collectionView == mainCollectionView {
+            let listenContent = presenter.cellContent.bigCellContent[indexPath.row].listenContent
+            presenter.tapOnTheView(listenContent: listenContent)
+        } else {
+            let listenContent = presenter.cellContent.smallCellContent[indexPath.row].listenContent
+            presenter.tapOnTheView(listenContent: listenContent)
+        }
     }
 }
