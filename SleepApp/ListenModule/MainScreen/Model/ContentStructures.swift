@@ -24,7 +24,6 @@ struct DetailContent {
 struct ListenContent {
     let author: String
     let title: String
-    let image: UIImage
     let images: [UIImage?]
     let text: String
 }

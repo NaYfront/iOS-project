@@ -44,12 +44,12 @@ class MainModuleAssemblyBuilder: AssemblyBuilderProtocol {
     
     func createModuleContent() -> [MainContent] {
         
-        let listen = ListenContent(author: "authorProverka", title: "titleProverka", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage(), images: [UIImage(systemName: "questionmark.app.fill") ?? UIImage(), UIImage(systemName: "questionmark.app.fill") ?? UIImage(), UIImage(systemName: "questionmark.app.fill") ?? UIImage()], text: "textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka")
+        let listen = ListenContent(author: "authorProverka", title: "titleProverka", images: [UIImage(systemName: "questionmark.app.fill") ?? UIImage(), UIImage(systemName: "questionmark.app.fill") ?? UIImage(), UIImage(systemName: "questionmark.app.fill") ?? UIImage()], text: "textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka textProverka")
         
         let asmrDetailContent =
-        [DetailContent(author: "Petr Petrov", title: "Relaxing Sounds", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage(), listenContent: listen),
-         DetailContent(author: "Artem Artemov", title: "Very Relaxing Sounds", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage(), listenContent: listen),
-         DetailContent(author: "Igor Igorev", title: "Ultra Relaxing Sounds", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage(), listenContent: listen)]
+        [DetailContent(author: "АСМР море", title: "Расслабляющие звуки моря", image: UIImage(named: "asmr1") ?? UIImage(), listenContent: asmr1),
+         DetailContent(author: "Музыкальные инструменты", title: "Музыка, помогающая уснуть", image: UIImage(named: "asmr2") ?? UIImage(), listenContent: listen),
+         DetailContent(author: "Анастасия", title: "Звуки рук", image: UIImage(named: "asmr3") ?? UIImage(), listenContent: listen)]
         
         let fairytalesDetailContent =
         [DetailContent(author: "John Ronald Reuel Tolkien", title: "The Lord of the Rings", image: UIImage(systemName: "questionmark.app.fill") ?? UIImage(), listenContent: listen),
@@ -67,3 +67,7 @@ class MainModuleAssemblyBuilder: AssemblyBuilderProtocol {
                 MainContent(title: "Something", color: .systemPink, detailContent: asmrDetailContent)]
     }
 }
+
+let asmr1 = ListenContent(author: "Расслабляющие звуки моря", title: "Звуки моря", images: [UIImage(named: "asmrSea1") ?? UIImage(), UIImage(named: "asmrSea2") ?? UIImage(), UIImage(named: "asmrSea3") ?? UIImage()], text: """
+Перед тем как уснуть, окажитесь на просторном пляже, почуствуйте песок под ногами и слушайте как волнится море
+""")

@@ -56,6 +56,7 @@
 		39FEF24F284CBB2200335100 /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FEF24D284CBB2200335100 /* InfoDetailViewController.swift */; };
 		39FEF250284CBB2200335100 /* InfoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FEF24E284CBB2200335100 /* InfoDetailViewController.xib */; };
 		39FEF252284CBE2200335100 /* InfoDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FEF251284CBE2200335100 /* InfoDetailPresenter.swift */; };
+		39FEF256284D0DE200335100 /* SeaAsmr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39FEF255284D0DE200335100 /* SeaAsmr.mp3 */; };
 		B6D7B806B4170019B93E2659 /* Pods_SleepApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A650A8BA26000A4EFB304217 /* Pods_SleepApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,7 @@
 		39FEF24D284CBB2200335100 /* InfoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailViewController.swift; sourceTree = "<group>"; };
 		39FEF24E284CBB2200335100 /* InfoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoDetailViewController.xib; sourceTree = "<group>"; };
 		39FEF251284CBE2200335100 /* InfoDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailPresenter.swift; sourceTree = "<group>"; };
+		39FEF255284D0DE200335100 /* SeaAsmr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SeaAsmr.mp3; sourceTree = "<group>"; };
 		A650A8BA26000A4EFB304217 /* Pods_SleepApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9C78439BE333DB0EF3B69B /* Pods-SleepApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepApp.debug.xcconfig"; path = "Target Support Files/Pods-SleepApp/Pods-SleepApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +196,7 @@
 		39224AF127EB6795005CC973 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				39FEF254284D0DAC00335100 /* Music */,
 				3962A1F827DCA40600358C48 /* LaunchScreen.storyboard */,
 				3962A1F627DCA40600358C48 /* Assets.xcassets */,
 				3962A1FB27DCA40600358C48 /* Info.plist */,
@@ -558,6 +561,14 @@
 			path = BigCell;
 			sourceTree = "<group>";
 		};
+		39FEF254284D0DAC00335100 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				39FEF255284D0DE200335100 /* SeaAsmr.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		92BFCF53760EC96E8C625F8A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -670,6 +681,7 @@
 				39A59913284BD7BC00E1A391 /* CollectionViewCell.xib in Resources */,
 				398162372818670300963F04 /* RestViewController.xib in Resources */,
 				397A99782819AF180028E880 /* MainViewController.xib in Resources */,
+				39FEF256284D0DE200335100 /* SeaAsmr.mp3 in Resources */,
 				39447C67281AE8C60058A7A5 /* MainTableViewCell.xib in Resources */,
 				39EEC71E284BFAFE008879ED /* BigCollectionViewCell.xib in Resources */,
 				3981622D2818556D00963F04 /* View.xib in Resources */,
