@@ -17,7 +17,6 @@ extension WakeTime {
 
     @NSManaged public var wakeTime: NSObject?
     @NSManaged public var date: Date?
-
 }
 
 extension WakeTime : Identifiable {

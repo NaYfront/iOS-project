@@ -15,7 +15,12 @@ enum Entities {
 }
 
 class CoreDataHandler {
+    
+    // MARK: Variables
+    
     private var context: NSManagedObjectContext
+    
+    // MARK: Initializations
     
     required init() {
         let persistentContainer: NSPersistentContainer = {
@@ -34,6 +39,8 @@ class CoreDataHandler {
         
         self.context = context
     }
+    
+    // MARK: Functions
     
     func getContext() -> NSManagedObjectContext {
         return self.context
@@ -72,5 +79,31 @@ class CoreDataHandler {
     func getLastObject(objectName: String) -> NSManagedObject? {
         if let objects = self.getAllObjects(objectName: objectName) { return objects.last }
         return nil
+    }
+    
+    func changeUserState() {
+        if let user = self.getLastObject(objectName: "User") as? User {
+            if user.state == "asleep" {
+                user.state = "awake"
+            } else {
+                user.state = "asleep"
+            }
+        }
+        self.saveContext()
+    }
+    
+    func changeUserPreferableWakeTime(newWakeTime: Time) {
+        if let user = self.getLastObject(objectName: "User") as? User {
+            user.preferableWakeTime = newWakeTime
+        }
+        
+        self.saveContext()
+    }
+    
+    func changeUserPreferableSleepTime(newSleepTime: Time) {
+        if let user = self.getLastObject(objectName: "User") as? User {
+            user.preferableSleepTime = newSleepTime
+        }
+        self.saveContext()
     }
 }

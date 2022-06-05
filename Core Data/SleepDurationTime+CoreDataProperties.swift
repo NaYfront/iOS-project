@@ -17,7 +17,6 @@ extension SleepDurationTime {
 
     @NSManaged public var sleepDurationTime: NSObject?
     @NSManaged public var date: Date?
-
 }
 
 extension SleepDurationTime : Identifiable {
