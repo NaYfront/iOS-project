@@ -9,8 +9,12 @@ import Foundation
 
 public class Time: NSObject, NSCoding {
     
+    // MARK: Variables
+    
     var hours: Int
     var minutes: Int
+    
+    // MARK: Initialization
     
     override init() {
         self.hours = 0
@@ -30,28 +34,36 @@ public class Time: NSObject, NSCoding {
         super.init()
     }
     
+    init(date: Date) {
+        let time = Time.getTimeFromDate(date: date)
+        self.hours = time.hours
+        self.minutes = time.minutes
+        super.init()
+    }
+    
     public required convenience init?(coder: NSCoder) {
         let hours = coder.decodeInteger(forKey: "Hours")
         let minutes = coder.decodeInteger(forKey: "Minutes")
         self.init(hours: hours, minutes: minutes)
     }
     
-    public func encode(with coder: NSCoder) {
-        coder.encode(hours, forKey: "Hours")
-        coder.encode(minutes, forKey: "Minutes")
-    }
+    // MARK: Static Functions
     
     static func getCurrentTime() -> Time {
+        return self.getTimeFromDate(date: Date())
+    }
+    
+    static func getTimeFromDate(date: Date) -> Time {
         let formatter = DateFormatter()
         formatter.timeStyle = .short
         formatter.dateFormat = "a"
-        let timeReference = formatter.string(from: Date())
+        let timeReference = formatter.string(from: date)
         
         formatter.dateFormat = "hh"
-        var hours = formatter.string(from: Date())
+        var hours = formatter.string(from: date)
         
         formatter.dateFormat = "mm"
-        let minutes = formatter.string(from: Date())
+        let minutes = formatter.string(from: date)
         
         if timeReference == "AM" {
             if hours == "12" {
@@ -65,6 +77,15 @@ public class Time: NSObject, NSCoding {
 
         return Time(hours: Int(hours)!, minutes: Int(minutes)!)
     }
+    
+    // MARK: Encode
+    
+    public func encode(with coder: NSCoder) {
+        coder.encode(hours, forKey: "Hours")
+        coder.encode(minutes, forKey: "Minutes")
+    }
+    
+    // MARK: Functions
     
     func toString() -> String {
         var hoursString = String(self.hours)

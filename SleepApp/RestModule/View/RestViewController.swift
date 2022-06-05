@@ -8,19 +8,19 @@
 import UIKit
 
 protocol RestViewProtocol: AnyObject {
-    func showUserStateAnimation(userState: UserStates)
+    func showUserStateAnimation(userState: String)
     func changePreferableWakeTimeLabel(newWakeTime: Time)
     func changeSleepDurationLabel(sleepDuration: Time, color: UIColor)
     func changeView()
 }
 
 class RestViewController: UIViewController {
+    
+    // MARK: Presenters
 
     var restViewPresenter: RestViewPresenterProtocol!
     
-    @IBOutlet weak var sleepDurationGoalLabel: UILabel!
-    
-    @IBOutlet weak var sleepDurationGoalTimeLabel: UILabel!
+    // MARK: UI
     
     @IBOutlet weak var sleepDurationLabel: UILabel!
     
@@ -42,6 +42,8 @@ class RestViewController: UIViewController {
     
     @IBOutlet weak var changeUserStatusButton: UIButton!
     
+    // MARK: Actions
+    
     @IBAction func changeUserStatusButtonAction(_ sender: Any) {
         self.restViewPresenter.changeUserState()
     }
@@ -50,13 +52,17 @@ class RestViewController: UIViewController {
         self.restViewPresenter.changeUserState()
     }
     
+    // MARK: ViewController Lificycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.animationBackgroundView.isHidden = false
         self.wakeUpView.alpha = 1
         
-        sleepDurationGoalLabel.makeCornerRadius(radius: 20)
-        sleepDurationGoalTimeLabel.makeCornerRadius(radius: 20)
+        if restViewPresenter.getUserState() == "asleep" {
+            self.wakeUpView.isHidden = false
+        }
+        
         sleepDurationLabel.makeCornerRadius(radius: 20)
         sleepDurationTimeLabel.makeCornerRadius(radius: 20)
         wakeUpLabel.makeCornerRadius(radius: 20)
@@ -68,12 +74,15 @@ class RestViewController: UIViewController {
 }
 
 extension RestViewController: RestViewProtocol {
+    
+    // MARK: Protocol Implementation
+    
     func changeSleepDurationLabel(sleepDuration: Time, color: UIColor) {
         sleepDurationTimeLabel.text = "\(sleepDuration.toString())"
         sleepDurationTimeLabel.textColor = color
     }
     
-    func showUserStateAnimation(userState: UserStates) {
+    func showUserStateAnimation(userState: String) {
         let scenes = UIApplication.shared.connectedScenes
         let windowScene = scenes.first as? UIWindowScene
         let currentWindow = windowScene?.windows.first
@@ -82,8 +91,8 @@ extension RestViewController: RestViewProtocol {
         userStateAnimate(userState: userState)
     }
 
-    func userStateAnimate(userState: UserStates) {
-        if userState == UserStates.awake {
+    func userStateAnimate(userState: String) {
+        if userState == "awake" {
             self.currentStateImageView.image = UIImage(systemName: "moon.zzz.fill")
             self.currentStateLabel.text = "Good Night"
         } else {

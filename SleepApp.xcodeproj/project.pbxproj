@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2899D149281AFC53001A3E0A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899D148281AFC53001A3E0A /* User.swift */; };
+		282BAE8C2849018700F12C78 /* GraphDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BAE8B2849018700F12C78 /* GraphDataSource.swift */; };
+		282BAE9428494EC400F12C78 /* GraphsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BAE9328494EC400F12C78 /* GraphsUITests.swift */; };
+		282BAE9628494EC400F12C78 /* GraphsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BAE9528494EC400F12C78 /* GraphsUITestsLaunchTests.swift */; };
+		287ECEBA284D076900918BD7 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287ECEB8284D076900918BD7 /* User+CoreDataClass.swift */; };
+		287ECEBB284D076900918BD7 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287ECEB9284D076900918BD7 /* User+CoreDataProperties.swift */; };
 		289B1EE8284199FD00CAAA1E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B1EE7284199FD00CAAA1E /* Extensions.swift */; };
 		289B1EEA28419A8E00CAAA1E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B1EE928419A8E00CAAA1E /* Time.swift */; };
 		289B1F06284407FC00CAAA1E /* UserHistoryData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 289B1F04284407FC00CAAA1E /* UserHistoryData.xcdatamodeld */; };
@@ -19,6 +23,7 @@
 		289B1F122844089200CAAA1E /* SleepDurationTime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B1F0C2844089200CAAA1E /* SleepDurationTime+CoreDataProperties.swift */; };
 		289B1F1428440A5100CAAA1E /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289B1F1328440A5100CAAA1E /* CoreDataHandler.swift */; };
 		28B7006928203CF800C0CB5A /* TimeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B7006828203CF800C0CB5A /* TimeCircle.swift */; };
+		28D2B496284BCD2B00551C1E /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2B495284BCD2A00551C1E /* NotificationHandler.swift */; };
 		28DCB82B2844365E005868A2 /* TimeTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DCB82A2844365E005868A2 /* TimeTransformer.swift */; };
 		3962A1EE27DCA40500358C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962A1ED27DCA40500358C48 /* AppDelegate.swift */; };
 		3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962A1EF27DCA40500358C48 /* SceneDelegate.swift */; };
@@ -36,14 +41,30 @@
 		39816221281853B700963F04 /* RestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981621F281853B700963F04 /* RestViewController.swift */; };
 		398162242818542300963F04 /* RestViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162232818542300963F04 /* RestViewPresenter.swift */; };
 		3981622A2818552400963F04 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162282818552400963F04 /* ProfileViewController.swift */; };
-		3981622F281855E500963F04 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981622E281855E500963F04 /* ProfilePresenter.swift */; };
+		3981622F281855E500963F04 /* ProfileViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981622E281855E500963F04 /* ProfileViewPresenter.swift */; };
 		398162312818561500963F04 /* ProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398162302818561500963F04 /* ProfileBuilder.swift */; };
 		398162352818650200963F04 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398162342818650200963F04 /* ProfileViewController.xib */; };
 		398162372818670300963F04 /* RestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398162362818670300963F04 /* RestViewController.xib */; };
+		81A32D41B592AA094F9C269A /* Pods_SleepApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B953644FC21019073AAE56 /* Pods_SleepApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		282BAE9728494EC400F12C78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3962A1E227DCA40500358C48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3962A1E927DCA40500358C48;
+			remoteInfo = SleepApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		2899D148281AFC53001A3E0A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		282BAE8B2849018700F12C78 /* GraphDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDataSource.swift; sourceTree = "<group>"; };
+		282BAE9128494EC400F12C78 /* GraphsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		282BAE9328494EC400F12C78 /* GraphsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsUITests.swift; sourceTree = "<group>"; };
+		282BAE9528494EC400F12C78 /* GraphsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		287ECEB8284D076900918BD7 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		287ECEB9284D076900918BD7 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		289B1EE7284199FD00CAAA1E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		289B1EE928419A8E00CAAA1E /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		289B1F05284407FC00CAAA1E /* UserHistoryData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserHistoryData.xcdatamodel; sourceTree = "<group>"; };
@@ -55,6 +76,7 @@
 		289B1F0C2844089200CAAA1E /* SleepDurationTime+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SleepDurationTime+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		289B1F1328440A5100CAAA1E /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 		28B7006828203CF800C0CB5A /* TimeCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircle.swift; sourceTree = "<group>"; };
+		28D2B495284BCD2A00551C1E /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		28DCB82A2844365E005868A2 /* TimeTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTransformer.swift; sourceTree = "<group>"; };
 		3962A1EA27DCA40500358C48 /* SleepApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3962A1ED27DCA40500358C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,25 +96,43 @@
 		3981621F281853B700963F04 /* RestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestViewController.swift; sourceTree = "<group>"; };
 		398162232818542300963F04 /* RestViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestViewPresenter.swift; sourceTree = "<group>"; };
 		398162282818552400963F04 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		3981622E281855E500963F04 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		3981622E281855E500963F04 /* ProfileViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewPresenter.swift; sourceTree = "<group>"; };
 		398162302818561500963F04 /* ProfileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBuilder.swift; sourceTree = "<group>"; };
 		398162342818650200963F04 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		398162362818670300963F04 /* RestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestViewController.xib; sourceTree = "<group>"; };
-		D3DCDE08DD9B1CBE13F0B82E /* Pods-SleepApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepApp.debug.xcconfig"; path = "Target Support Files/Pods-SleepApp/Pods-SleepApp.debug.xcconfig"; sourceTree = "<group>"; };
-		ED1E3905E7810792DD46DEDA /* Pods-SleepApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepApp.release.xcconfig"; path = "Target Support Files/Pods-SleepApp/Pods-SleepApp.release.xcconfig"; sourceTree = "<group>"; };
+		3FE7961604DBF5C2D09DFC46 /* Pods-SleepApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepApp.release.xcconfig"; path = "Target Support Files/Pods-SleepApp/Pods-SleepApp.release.xcconfig"; sourceTree = "<group>"; };
+		994CC1AE7DF76419E04FB2F4 /* Pods-SleepApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepApp.debug.xcconfig"; path = "Target Support Files/Pods-SleepApp/Pods-SleepApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D4B953644FC21019073AAE56 /* Pods_SleepApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3962A1E727DCA40500358C48 /* Frameworks */ = {
+		282BAE8E28494EC400F12C78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3962A1E727DCA40500358C48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81A32D41B592AA094F9C269A /* Pods_SleepApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		282BAE9228494EC400F12C78 /* GraphsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				282BAE9328494EC400F12C78 /* GraphsUITests.swift */,
+				282BAE9528494EC400F12C78 /* GraphsUITestsLaunchTests.swift */,
+			);
+			path = GraphsUITests;
+			sourceTree = "<group>";
+		};
 		284CC14D27FF7F2700878E8E /* RestModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,9 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				398162302818561500963F04 /* ProfileBuilder.swift */,
-				398162272818547000963F04 /* Model */,
 				398162262818546B00963F04 /* View */,
 				398162252818546600963F04 /* Presenter */,
+				282BAE8B2849018700F12C78 /* GraphDataSource.swift */,
 			);
 			path = ProfileModule;
 			sourceTree = "<group>";
@@ -139,6 +179,8 @@
 		289B1EF12843F19600CAAA1E /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				287ECEB8284D076900918BD7 /* User+CoreDataClass.swift */,
+				287ECEB9284D076900918BD7 /* User+CoreDataProperties.swift */,
 				289B1F072844089200CAAA1E /* WakeTime+CoreDataClass.swift */,
 				289B1F082844089200CAAA1E /* WakeTime+CoreDataProperties.swift */,
 				289B1F092844089200CAAA1E /* SleepTime+CoreDataClass.swift */,
@@ -154,7 +196,6 @@
 		28DCB82C284569E6005868A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2899D148281AFC53001A3E0A /* User.swift */,
 				289B1EE928419A8E00CAAA1E /* Time.swift */,
 			);
 			path = Models;
@@ -181,11 +222,13 @@
 		3962A1E127DCA40500358C48 = {
 			isa = PBXGroup;
 			children = (
+				28D2B495284BCD2A00551C1E /* NotificationHandler.swift */,
 				289B1EF12843F19600CAAA1E /* Core Data */,
 				3962A1EC27DCA40500358C48 /* SleepApp */,
+				282BAE9228494EC400F12C78 /* GraphsUITests */,
 				3962A1EB27DCA40500358C48 /* Products */,
 				92BFCF53760EC96E8C625F8A /* Pods */,
-				54E926CE1F54248C16332E3D /* Frameworks */,
+				63E7C156861F5D64FFBB5E2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				3962A1EA27DCA40500358C48 /* SleepApp.app */,
+				282BAE9128494EC400F12C78 /* GraphsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,7 +327,7 @@
 		398162252818546600963F04 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				3981622E281855E500963F04 /* ProfilePresenter.swift */,
+				3981622E281855E500963F04 /* ProfileViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -297,16 +341,10 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		398162272818547000963F04 /* Model */ = {
+		63E7C156861F5D64FFBB5E2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		54E926CE1F54248C16332E3D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
+				D4B953644FC21019073AAE56 /* Pods_SleepApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -314,8 +352,8 @@
 		92BFCF53760EC96E8C625F8A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D3DCDE08DD9B1CBE13F0B82E /* Pods-SleepApp.debug.xcconfig */,
-				ED1E3905E7810792DD46DEDA /* Pods-SleepApp.release.xcconfig */,
+				994CC1AE7DF76419E04FB2F4 /* Pods-SleepApp.debug.xcconfig */,
+				3FE7961604DBF5C2D09DFC46 /* Pods-SleepApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -323,15 +361,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		282BAE9028494EC400F12C78 /* GraphsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282BAE9B28494EC400F12C78 /* Build configuration list for PBXNativeTarget "GraphsUITests" */;
+			buildPhases = (
+				282BAE8D28494EC400F12C78 /* Sources */,
+				282BAE8E28494EC400F12C78 /* Frameworks */,
+				282BAE8F28494EC400F12C78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				282BAE9828494EC400F12C78 /* PBXTargetDependency */,
+			);
+			name = GraphsUITests;
+			productName = GraphsUITests;
+			productReference = 282BAE9128494EC400F12C78 /* GraphsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		3962A1E927DCA40500358C48 /* SleepApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3962A1FE27DCA40600358C48 /* Build configuration list for PBXNativeTarget "SleepApp" */;
 			buildPhases = (
-				108602DB3C21F714A11C6C23 /* [CP] Check Pods Manifest.lock */,
+				D4C9C933BAAA4687E53FC402 /* [CP] Check Pods Manifest.lock */,
 				39EC50CC27F08CC600536424 /* ShellScript */,
 				3962A1E627DCA40500358C48 /* Sources */,
 				3962A1E727DCA40500358C48 /* Frameworks */,
 				3962A1E827DCA40500358C48 /* Resources */,
+				AD1F6C6CE01875E45DC190A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -349,9 +406,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					282BAE9028494EC400F12C78 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3962A1E927DCA40500358C48;
+					};
 					3962A1E927DCA40500358C48 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -371,11 +432,19 @@
 			projectRoot = "";
 			targets = (
 				3962A1E927DCA40500358C48 /* SleepApp */,
+				282BAE9028494EC400F12C78 /* GraphsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		282BAE8F28494EC400F12C78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3962A1E827DCA40500358C48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,7 +461,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		108602DB3C21F714A11C6C23 /* [CP] Check Pods Manifest.lock */ = {
+		39EC50CC27F08CC600536424 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		AD1F6C6CE01875E45DC190A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepApp/Pods-SleepApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepApp/Pods-SleepApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SleepApp/Pods-SleepApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C9C933BAAA4687E53FC402 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,42 +517,37 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		39EC50CC27F08CC600536424 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		282BAE8D28494EC400F12C78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282BAE9428494EC400F12C78 /* GraphsUITests.swift in Sources */,
+				282BAE9628494EC400F12C78 /* GraphsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3962A1E627DCA40500358C48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3962A1EE27DCA40500358C48 /* AppDelegate.swift in Sources */,
 				398162032817094F00963F04 /* InfoPresenter.swift in Sources */,
+				282BAE8C2849018700F12C78 /* GraphDataSource.swift in Sources */,
 				39816221281853B700963F04 /* RestViewController.swift in Sources */,
 				3981621E2818539900963F04 /* RestBuilder.swift in Sources */,
 				289B1F0E2844089200CAAA1E /* WakeTime+CoreDataProperties.swift in Sources */,
 				3981620A281712A300963F04 /* InfoViewController.swift in Sources */,
+				28D2B496284BCD2B00551C1E /* NotificationHandler.swift in Sources */,
+				287ECEBB284D076900918BD7 /* User+CoreDataProperties.swift in Sources */,
+				287ECEBA284D076900918BD7 /* User+CoreDataClass.swift in Sources */,
 				3962A1F027DCA40500358C48 /* SceneDelegate.swift in Sources */,
 				289B1EEA28419A8E00CAAA1E /* Time.swift in Sources */,
 				3981622A2818552400963F04 /* ProfileViewController.swift in Sources */,
 				3981621928184FFD00963F04 /* ListenBuilder.swift in Sources */,
 				289B1F112844089200CAAA1E /* SleepDurationTime+CoreDataClass.swift in Sources */,
-				2899D149281AFC53001A3E0A /* User.swift in Sources */,
 				289B1F06284407FC00CAAA1E /* UserHistoryData.xcdatamodeld in Sources */,
 				398162152818438000963F04 /* ListenPresenter.swift in Sources */,
 				3981620C2817132D00963F04 /* InfoBuilder.swift in Sources */,
@@ -462,13 +560,21 @@
 				28B7006928203CF800C0CB5A /* TimeCircle.swift in Sources */,
 				39816212281842B600963F04 /* ListenViewController.swift in Sources */,
 				289B1EE8284199FD00CAAA1E /* Extensions.swift in Sources */,
-				3981622F281855E500963F04 /* ProfilePresenter.swift in Sources */,
+				3981622F281855E500963F04 /* ProfileViewPresenter.swift in Sources */,
 				289B1F102844089200CAAA1E /* SleepTime+CoreDataProperties.swift in Sources */,
 				398162312818561500963F04 /* ProfileBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		282BAE9828494EC400F12C78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3962A1E927DCA40500358C48 /* SleepApp */;
+			targetProxy = 282BAE9728494EC400F12C78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3962A1F827DCA40600358C48 /* LaunchScreen.storyboard */ = {
@@ -482,6 +588,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		282BAE9928494EC400F12C78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arslanrashidov.GraphsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SleepApp;
+			};
+			name = Debug;
+		};
+		282BAE9A28494EC400F12C78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arslanrashidov.GraphsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SleepApp;
+			};
+			name = Release;
+		};
 		3962A1FC27DCA40600358C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -600,7 +740,7 @@
 		};
 		3962A1FF27DCA40600358C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3DCDE08DD9B1CBE13F0B82E /* Pods-SleepApp.debug.xcconfig */;
+			baseConfigurationReference = 994CC1AE7DF76419E04FB2F4 /* Pods-SleepApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -630,7 +770,7 @@
 		};
 		3962A20027DCA40600358C48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED1E3905E7810792DD46DEDA /* Pods-SleepApp.release.xcconfig */;
+			baseConfigurationReference = 3FE7961604DBF5C2D09DFC46 /* Pods-SleepApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -661,6 +801,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		282BAE9B28494EC400F12C78 /* Build configuration list for PBXNativeTarget "GraphsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282BAE9928494EC400F12C78 /* Debug */,
+				282BAE9A28494EC400F12C78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3962A1E527DCA40500358C48 /* Build configuration list for PBXProject "SleepApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

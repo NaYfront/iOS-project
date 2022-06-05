@@ -151,7 +151,6 @@ private class TimeCircleRenderer {
         let center = CGPoint(x: bounds.midX, y: bounds.midY)
         let offset = lineWidth / 2
         let radius = min(bounds.width, bounds.height) / 2 - offset
-        print(bounds)
         
         let ring = UIBezierPath(arcCenter: center, radius: CGFloat(radius), startAngle: startAngle,
                               endAngle: endAngle, clockwise: true)

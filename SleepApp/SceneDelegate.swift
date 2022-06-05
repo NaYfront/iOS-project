@@ -18,17 +18,49 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let restVC = RestModuleBuilder.createRestFirstScreen()
+        let coreDataHandler = CoreDataHandler()
+        let user = getUser(coreDataHandler: coreDataHandler)
+        
+        let profile = ProfileModuleBuilder.createProfileFirstScreen(coreDataHandler: coreDataHandler)
+        
+        let profileVC = profile.0
+        let profileVP = profile.1
+        let restVC = RestModuleBuilder.createRestFirstScreen(coreDataHandler: coreDataHandler, user: user, profileViewPresenter: profileVP)
         let infoVC = InfoModuleBuilder.createInfoFirstScreen()
         let listenVC = ListenModuleBuilder.createListenFirstScreen()
-        let profileVC = ProfileModuleBuilder.createProfileFirstScreen()
         
         let tabBarController = UITabBarController()
         tabBarController.tabBar.tintColor = UIColor(named: "iceGreen")
+        tabBarController.tabBar.barTintColor = UIColor(named: "darkBlue")
+        
+        if #available(iOS 15, *) {
+            let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.selectionIndicatorTintColor = UIColor(named: "iceGreen")
+            tabBarAppearance.backgroundColor = UIColor(named: "darkBlue")
+            UITabBar.appearance().standardAppearance = tabBarAppearance
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        }
+        
+        
+        
         tabBarController.viewControllers = [restVC, infoVC, listenVC, profileVC]
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
+    }
+    
+    func getUser(coreDataHandler: CoreDataHandler) -> User {
+        if coreDataHandler.getAllObjects(objectName: "User")!.count == 0 {
+            let user = User(context: coreDataHandler.getContext())
+            user.state = "awake"
+            user.preferableSleepTime = Time(hours: 20, minutes: 0)
+            user.preferableWakeTime = Time(hours: 8, minutes: 0)
+            coreDataHandler.saveContext()
+            
+            return user
+        } else {
+            return coreDataHandler.getLastObject(objectName: "User") as! User
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

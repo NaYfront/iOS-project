@@ -15,8 +15,6 @@
                 <outlet property="changeUserStatusButton" destination="ibI-Wr-MJF" id="72l-fW-AAZ"/>
                 <outlet property="currentStateImageView" destination="p3M-ZP-sEY" id="Xwt-aD-29A"/>
                 <outlet property="currentStateLabel" destination="Xlg-Dh-45d" id="43V-dP-Rxs"/>
-                <outlet property="sleepDurationGoalLabel" destination="rhd-J1-27E" id="v9v-Kp-Bem"/>
-                <outlet property="sleepDurationGoalTimeLabel" destination="xXf-ye-Di5" id="AYS-7d-dbl"/>
                 <outlet property="sleepDurationLabel" destination="qTa-L4-bJD" id="KsT-UR-fMC"/>
                 <outlet property="sleepDurationTimeLabel" destination="j87-Rw-Gdu" id="wVY-vW-iLM"/>
                 <outlet property="timeCircle" destination="JNP-Te-gu0" id="hEv-98-j9l"/>
@@ -31,48 +29,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isU-FF-TXo" userLabel="Sleep Duration Goal View">
-                    <rect key="frame" x="40" y="56" width="331" height="44"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXf-ye-Di5">
-                            <rect key="frame" x="249" y="0.0" width="67" height="44"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="xXf-ye-Di5" secondAttribute="height" multiplier="13:10" constant="9.7999999999999972" id="LF5-GH-Ley"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLEEP DURATION GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhd-J1-27E">
-                            <rect key="frame" x="0.0" y="0.0" width="241" height="44"/>
-                            <color key="backgroundColor" name="darkBlue"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="rhd-J1-27E" secondAttribute="height" multiplier="127:25" constant="17.47999999999999" id="aVP-Rm-7fm"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="0.070588235289999995" green="0.078431372550000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstItem="rhd-J1-27E" firstAttribute="leading" secondItem="isU-FF-TXo" secondAttribute="leading" id="7Zo-aS-i7o"/>
-                        <constraint firstItem="xXf-ye-Di5" firstAttribute="leading" secondItem="rhd-J1-27E" secondAttribute="trailing" constant="8" id="A9v-LH-OZc"/>
-                        <constraint firstItem="xXf-ye-Di5" firstAttribute="top" secondItem="isU-FF-TXo" secondAttribute="top" id="FIH-Qy-Hiv"/>
-                        <constraint firstItem="xXf-ye-Di5" firstAttribute="leading" secondItem="rhd-J1-27E" secondAttribute="trailing" constant="8" id="Zph-cn-ZiJ"/>
-                        <constraint firstItem="rhd-J1-27E" firstAttribute="top" secondItem="isU-FF-TXo" secondAttribute="top" id="b62-ad-6fd"/>
-                        <constraint firstAttribute="width" secondItem="isU-FF-TXo" secondAttribute="height" multiplier="331:44" id="hni-J6-ByO"/>
-                        <constraint firstItem="xXf-ye-Di5" firstAttribute="leading" secondItem="rhd-J1-27E" secondAttribute="trailing" constant="8" id="htv-Na-QyO"/>
-                        <constraint firstAttribute="bottom" secondItem="rhd-J1-27E" secondAttribute="bottom" id="o2Y-3W-E7E"/>
-                        <constraint firstAttribute="bottom" secondItem="xXf-ye-Di5" secondAttribute="bottom" id="zpS-IP-pXq"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcK-JQ-EYI" userLabel="Sleep Duration View">
-                    <rect key="frame" x="40" y="113.5" width="317" height="44"/>
+                    <rect key="frame" x="40" y="70.5" width="317" height="44"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j87-Rw-Gdu">
-                            <rect key="frame" x="224" y="0.0" width="67" height="44"/>
+                            <rect key="frame" x="224" y="0.0" width="85" height="44"/>
                             <color key="backgroundColor" red="0.98580889930000004" green="1" blue="0.95674827529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,12 +41,12 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLEEP DURATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTa-L4-bJD">
                             <rect key="frame" x="25" y="0.0" width="191" height="44"/>
-                            <color key="backgroundColor" name="darkBlue"/>
+                            <color key="backgroundColor" name="darkerBlue"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="qTa-L4-bJD" secondAttribute="height" multiplier="167:44" constant="24" id="qDF-nj-vIp"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -93,7 +54,7 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="TcK-JQ-EYI" secondAttribute="height" multiplier="125:22" constant="67" id="4qn-Fq-CKH"/>
                         <constraint firstItem="qTa-L4-bJD" firstAttribute="top" secondItem="TcK-JQ-EYI" secondAttribute="top" id="GRJ-xr-qc4"/>
-                        <constraint firstAttribute="trailing" secondItem="j87-Rw-Gdu" secondAttribute="trailing" constant="26" id="ORq-ga-eaB"/>
+                        <constraint firstAttribute="trailing" secondItem="j87-Rw-Gdu" secondAttribute="trailing" constant="8" id="ORq-ga-eaB"/>
                         <constraint firstAttribute="bottom" secondItem="j87-Rw-Gdu" secondAttribute="bottom" id="bs8-wx-mcI"/>
                         <constraint firstAttribute="bottom" secondItem="qTa-L4-bJD" secondAttribute="bottom" id="gl8-3r-pya"/>
                         <constraint firstItem="j87-Rw-Gdu" firstAttribute="leading" secondItem="qTa-L4-bJD" secondAttribute="trailing" constant="8" id="u82-Qa-yny"/>
@@ -102,10 +63,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTQ-91-SJA" userLabel="Wake Up Time View">
-                    <rect key="frame" x="40" y="618" width="331" height="44"/>
+                    <rect key="frame" x="40" y="660" width="331" height="44"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFB-OH-Eu0">
-                            <rect key="frame" x="213" y="0.0" width="67" height="44"/>
+                            <rect key="frame" x="213" y="0.0" width="88" height="44"/>
                             <color key="backgroundColor" red="0.98580889930000004" green="1" blue="0.95674827529999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,18 +74,18 @@
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAKE UP TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScC-id-WP3">
                             <rect key="frame" x="51" y="0.0" width="154" height="44"/>
-                            <color key="backgroundColor" name="darkBlue"/>
+                            <color key="backgroundColor" name="darkerBlue"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="ScC-id-WP3" secondAttribute="height" multiplier="7:2" id="Uws-nM-fjg"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.070588235289999995" green="0.078431372550000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="TFB-OH-Eu0" secondAttribute="trailing" constant="51" id="2Ca-9p-ubj"/>
+                        <constraint firstAttribute="trailing" secondItem="TFB-OH-Eu0" secondAttribute="trailing" constant="30" id="2Ca-9p-ubj"/>
                         <constraint firstAttribute="bottom" secondItem="TFB-OH-Eu0" secondAttribute="bottom" id="2Su-di-RFa"/>
                         <constraint firstItem="ScC-id-WP3" firstAttribute="leading" secondItem="XTQ-91-SJA" secondAttribute="leading" constant="51" id="9sh-an-OCu"/>
                         <constraint firstAttribute="bottom" secondItem="ScC-id-WP3" secondAttribute="bottom" id="BCT-7O-lWf"/>
@@ -135,7 +96,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" id="JNP-Te-gu0" customClass="TimeCircle" customModule="SleepApp" customModuleProvider="target">
-                    <rect key="frame" x="57" y="193" width="300" height="300"/>
+                    <rect key="frame" x="57" y="184" width="300" height="300"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="eFi-m4-Pvp">
@@ -146,7 +107,7 @@
                     <color key="backgroundColor" red="0.091726221139999994" green="0.10431104150000001" blue="0.1686353981" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibI-Wr-MJF">
-                    <rect key="frame" x="82" y="724" width="250" height="38"/>
+                    <rect key="frame" x="82" y="756" width="250" height="38"/>
                     <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule" titleAlignment="center">
                         <backgroundConfiguration key="background">
                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -284,22 +245,19 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.070588235289999995" green="0.078431372550000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="ibI-Wr-MJF" firstAttribute="top" secondItem="XTQ-91-SJA" secondAttribute="bottom" constant="62" id="4az-Fg-bzG"/>
-                <constraint firstItem="TcK-JQ-EYI" firstAttribute="top" secondItem="isU-FF-TXo" secondAttribute="bottom" constant="13.5" id="5dE-uG-Kau"/>
+                <constraint firstItem="ibI-Wr-MJF" firstAttribute="top" secondItem="XTQ-91-SJA" secondAttribute="bottom" constant="52" id="4az-Fg-bzG"/>
                 <constraint firstItem="TcK-JQ-EYI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="8TY-Hl-2dx"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TcK-JQ-EYI" secondAttribute="trailing" constant="57" id="ACR-Du-clS"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ibI-Wr-MJF" secondAttribute="bottom" constant="100" id="NJ0-Xh-eBt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ibI-Wr-MJF" secondAttribute="bottom" constant="68" id="NJ0-Xh-eBt"/>
                 <constraint firstItem="tTf-wS-URx" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Nc8-OM-YF5"/>
-                <constraint firstItem="isU-FF-TXo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="OFd-pn-SYr"/>
                 <constraint firstItem="tTf-wS-URx" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Q5A-Q1-Vh6"/>
-                <constraint firstItem="isU-FF-TXo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="Tds-Mp-2f1"/>
                 <constraint firstItem="tTf-wS-URx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VhH-3s-I0h"/>
                 <constraint firstItem="ibI-Wr-MJF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="82" id="Vjk-Rs-7l8"/>
                 <constraint firstItem="tTf-wS-URx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ab3-eg-v7W"/>
                 <constraint firstItem="XTQ-91-SJA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="hbI-6b-qYs"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ibI-Wr-MJF" secondAttribute="trailing" constant="82" id="lH3-Bh-aTc"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XTQ-91-SJA" secondAttribute="trailing" constant="43" id="qB0-4n-bpM"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="isU-FF-TXo" secondAttribute="trailing" constant="43" id="u3B-1f-fVn"/>
+                <constraint firstItem="TcK-JQ-EYI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="26.5" id="zLj-Ra-Qcf"/>
             </constraints>
             <point key="canvasLocation" x="-239.13043478260872" y="-76.339285714285708"/>
         </view>
@@ -310,7 +268,10 @@
         <image name="moon.fill" catalog="system" width="128" height="121"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="darkBlue">
-            <color red="0.071000002324581146" green="0.078000001609325409" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.091726221139999994" green="0.10431104150000001" blue="0.1686353981" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="darkerBlue">
+            <color red="0.071599550550000002" green="0.077281467620000002" blue="0.1254961789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
