@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,7 +39,7 @@
                             <color key="textColor" systemColor="systemRedColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLEEP DURATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTa-L4-bJD">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длительность сна" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTa-L4-bJD">
                             <rect key="frame" x="25" y="0.0" width="191" height="44"/>
                             <color key="backgroundColor" name="darkerBlue"/>
                             <constraints>
@@ -72,7 +72,7 @@
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAKE UP TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScC-id-WP3">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пробуждение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScC-id-WP3">
                             <rect key="frame" x="51" y="0.0" width="154" height="44"/>
                             <color key="backgroundColor" name="darkerBlue"/>
                             <constraints>
@@ -107,15 +107,16 @@
                     <color key="backgroundColor" red="0.091726221139999994" green="0.10431104150000001" blue="0.1686353981" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibI-Wr-MJF">
-                    <rect key="frame" x="82" y="756" width="250" height="38"/>
+                    <rect key="frame" x="45" y="756" width="324" height="38"/>
                     <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule" titleAlignment="center">
                         <backgroundConfiguration key="background">
                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         </backgroundConfiguration>
                         <attributedString key="attributedTitle">
-                            <fragment content="Set Alarm">
+                            <fragment content=" Поставить будильник">
                                 <attributes>
                                     <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
@@ -197,7 +198,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </backgroundConfiguration>
                                 <attributedString key="attributedTitle">
-                                    <fragment content="Wake up">
+                                    <fragment content="Проснуться">
                                         <attributes>
                                             <font key="NSFont" size="20" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -252,10 +253,10 @@
                 <constraint firstItem="tTf-wS-URx" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Nc8-OM-YF5"/>
                 <constraint firstItem="tTf-wS-URx" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Q5A-Q1-Vh6"/>
                 <constraint firstItem="tTf-wS-URx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VhH-3s-I0h"/>
-                <constraint firstItem="ibI-Wr-MJF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="82" id="Vjk-Rs-7l8"/>
+                <constraint firstItem="ibI-Wr-MJF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="45" id="Vjk-Rs-7l8"/>
                 <constraint firstItem="tTf-wS-URx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ab3-eg-v7W"/>
                 <constraint firstItem="XTQ-91-SJA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="hbI-6b-qYs"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ibI-Wr-MJF" secondAttribute="trailing" constant="82" id="lH3-Bh-aTc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ibI-Wr-MJF" secondAttribute="trailing" constant="45" id="lH3-Bh-aTc"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XTQ-91-SJA" secondAttribute="trailing" constant="43" id="qB0-4n-bpM"/>
                 <constraint firstItem="TcK-JQ-EYI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="26.5" id="zLj-Ra-Qcf"/>
             </constraints>

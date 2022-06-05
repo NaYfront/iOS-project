@@ -26,8 +26,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let profileVC = profile.0
         let profileVP = profile.1
         let restVC = RestModuleBuilder.createRestFirstScreen(coreDataHandler: coreDataHandler, user: user, profileViewPresenter: profileVP)
-        let infoVC = InfoModuleBuilder.createInfoFirstScreen()
-        let listenVC = ListenModuleBuilder.createListenFirstScreen()
+        
+        let infoVC = UINavigationController()
+        let infoBuilder = InfoModuleBuilder()
+        let infoRouter = InfoRouter(navigationController: infoVC, assemblyBuilder: infoBuilder)
+        infoRouter.InfoMainViewController()
+        
+        let listenVC = UINavigationController()
+        let assemblyBuilder = MainModuleAssemblyBuilder()
+        let listenRouter = Router(navigationController: listenVC, assemblyBuilder: assemblyBuilder)
+        listenRouter.ListenMainViewController()
         
         let tabBarController = UITabBarController()
         tabBarController.tabBar.tintColor = UIColor(named: "iceGreen")

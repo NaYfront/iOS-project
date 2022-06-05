@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,30 +36,30 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPr-vE-lwn">
-                                    <rect key="frame" x="8" y="75" width="390" height="350"/>
+                                    <rect key="frame" x="8" y="85" width="390" height="350"/>
                                     <color key="backgroundColor" name="darkBlue"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="HPr-vE-lwn" secondAttribute="height" multiplier="207:175" constant="-24" id="lqL-6o-b2r"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cur-oe-nLX">
-                                    <rect key="frame" x="8" y="507" width="390" height="350"/>
+                                    <rect key="frame" x="8" y="517" width="390" height="350"/>
                                     <color key="backgroundColor" name="darkBlue"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="Cur-oe-nLX" secondAttribute="height" multiplier="207:175" constant="-24" id="MLC-hh-Fcy"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJH-iV-d6h">
-                                    <rect key="frame" x="9" y="903" width="389" height="350"/>
+                                    <rect key="frame" x="9" y="913" width="389" height="350"/>
                                     <color key="backgroundColor" red="0.070588235289999995" green="0.078431372550000003" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="CJH-iV-d6h" secondAttribute="height" multiplier="389:350" id="gIY-tD-TvN"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPA-we-9Rm">
-                                    <rect key="frame" x="81" y="39" width="240" height="46"/>
+                                    <rect key="frame" x="81" y="49" width="240" height="46"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep Time Statistics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuh-Jc-q3a">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Статистика засыпания" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuh-Jc-q3a">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="46"/>
                                             <color key="backgroundColor" name="darkerBlue"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -76,10 +76,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ww6-hM-hfK">
-                                    <rect key="frame" x="87" y="475" width="240" height="44"/>
+                                    <rect key="frame" x="75" y="485" width="264" height="44"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake Time Statistics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luR-qp-l6N">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="46"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Статистика пробуждения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luR-qp-l6N">
+                                            <rect key="frame" x="0.0" y="0.0" width="264" height="46"/>
                                             <color key="backgroundColor" name="darkerBlue"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                             <nil key="textColor"/>
@@ -95,9 +95,9 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4h-1I-lpv">
-                                    <rect key="frame" x="51" y="878" width="312" height="46"/>
+                                    <rect key="frame" x="51" y="888" width="312" height="46"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep Duration Statistics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VC-1e-PjA">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Статистика сна" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VC-1e-PjA">
                                             <rect key="frame" x="0.0" y="0.0" width="312" height="46"/>
                                             <color key="backgroundColor" red="0.071599550550000002" green="0.077281467620000002" blue="0.1254961789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -115,9 +115,9 @@
                                     </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHv-4N-dbM">
-                                    <rect key="frame" x="267" y="8" width="134" height="28"/>
+                                    <rect key="frame" x="260" y="8" width="141" height="28"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Settings" cornerStyle="capsule">
+                                    <buttonConfiguration key="configuration" style="plain" title="Настройки" cornerStyle="capsule">
                                         <backgroundConfiguration key="background">
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </backgroundConfiguration>
@@ -131,19 +131,19 @@
                             <color key="backgroundColor" red="0.091726221139999994" green="0.10431104150000001" blue="0.1686353981" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstItem="CJH-iV-d6h" firstAttribute="leading" secondItem="p0v-rn-AnY" secondAttribute="leading" constant="9" id="0SD-qj-maH"/>
-                                <constraint firstItem="kPA-we-9Rm" firstAttribute="top" secondItem="p0v-rn-AnY" secondAttribute="top" constant="39" id="67C-Sn-G6D"/>
+                                <constraint firstItem="kPA-we-9Rm" firstAttribute="top" secondItem="p0v-rn-AnY" secondAttribute="top" constant="49" id="67C-Sn-G6D"/>
                                 <constraint firstItem="HPr-vE-lwn" firstAttribute="leading" secondItem="p0v-rn-AnY" secondAttribute="leading" constant="8" id="6FZ-uV-5Kx"/>
-                                <constraint firstAttribute="trailing" secondItem="ww6-hM-hfK" secondAttribute="trailing" constant="87" id="D9p-V9-F0a"/>
+                                <constraint firstAttribute="trailing" secondItem="ww6-hM-hfK" secondAttribute="trailing" constant="75" id="D9p-V9-F0a"/>
                                 <constraint firstAttribute="trailing" secondItem="SHv-4N-dbM" secondAttribute="trailing" constant="13" id="EC7-m6-HxL"/>
                                 <constraint firstItem="SHv-4N-dbM" firstAttribute="top" secondItem="p0v-rn-AnY" secondAttribute="top" constant="8" id="Gx0-XE-F5e"/>
-                                <constraint firstItem="SHv-4N-dbM" firstAttribute="leading" secondItem="p0v-rn-AnY" secondAttribute="leading" constant="267" id="IKb-8S-UaU"/>
-                                <constraint firstItem="HPr-vE-lwn" firstAttribute="top" secondItem="p0v-rn-AnY" secondAttribute="top" constant="75" id="KXO-d3-f2U"/>
+                                <constraint firstItem="SHv-4N-dbM" firstAttribute="leading" secondItem="p0v-rn-AnY" secondAttribute="leading" constant="260" id="IKb-8S-UaU"/>
+                                <constraint firstItem="HPr-vE-lwn" firstAttribute="top" secondItem="p0v-rn-AnY" secondAttribute="top" constant="85" id="KXO-d3-f2U"/>
                                 <constraint firstItem="Cur-oe-nLX" firstAttribute="leading" secondItem="p0v-rn-AnY" secondAttribute="leading" constant="8" id="TBY-6n-o3I"/>
                                 <constraint firstAttribute="trailing" secondItem="kPA-we-9Rm" secondAttribute="trailing" constant="93" id="UC9-3m-DAQ"/>
                                 <constraint firstAttribute="trailing" secondItem="CJH-iV-d6h" secondAttribute="trailing" constant="16" id="URg-tk-ehT"/>
                                 <constraint firstItem="d4h-1I-lpv" firstAttribute="top" secondItem="Cur-oe-nLX" secondAttribute="bottom" constant="21" id="Vbl-rP-iC6"/>
                                 <constraint firstItem="Cur-oe-nLX" firstAttribute="top" secondItem="HPr-vE-lwn" secondAttribute="bottom" constant="82" id="YFe-nR-aES"/>
-                                <constraint firstItem="kPA-we-9Rm" firstAttribute="top" secondItem="SHv-4N-dbM" secondAttribute="bottom" constant="3" id="YbA-Iz-N9h"/>
+                                <constraint firstItem="kPA-we-9Rm" firstAttribute="top" secondItem="SHv-4N-dbM" secondAttribute="bottom" constant="13" id="YbA-Iz-N9h"/>
                                 <constraint firstItem="HPr-vE-lwn" firstAttribute="top" secondItem="kPA-we-9Rm" secondAttribute="bottom" constant="-10" id="bFE-aU-pu4"/>
                                 <constraint firstItem="d4h-1I-lpv" firstAttribute="leading" secondItem="p0v-rn-AnY" secondAttribute="leading" constant="51" id="ery-HF-AOw"/>
                                 <constraint firstAttribute="trailing" secondItem="d4h-1I-lpv" secondAttribute="trailing" constant="51" id="gf6-T7-u8o"/>
@@ -154,7 +154,7 @@
                                 <constraint firstItem="Cur-oe-nLX" firstAttribute="top" secondItem="HPr-vE-lwn" secondAttribute="bottom" constant="82" id="qtS-1t-gsy"/>
                                 <constraint firstAttribute="trailing" secondItem="Cur-oe-nLX" secondAttribute="trailing" constant="16" id="sbf-Rp-Nur"/>
                                 <constraint firstItem="CJH-iV-d6h" firstAttribute="top" secondItem="d4h-1I-lpv" secondAttribute="bottom" constant="-21" id="t1R-WG-fau"/>
-                                <constraint firstItem="ww6-hM-hfK" firstAttribute="leading" secondItem="p0v-rn-AnY" secondAttribute="leading" constant="87" id="v6Q-dA-aod"/>
+                                <constraint firstItem="ww6-hM-hfK" firstAttribute="leading" secondItem="p0v-rn-AnY" secondAttribute="leading" constant="75" id="v6Q-dA-aod"/>
                                 <constraint firstAttribute="trailing" secondItem="HPr-vE-lwn" secondAttribute="trailing" constant="16" id="yYN-Vq-2mj"/>
                             </constraints>
                         </view>
@@ -185,7 +185,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change preferable sleep time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="940-Qx-vBY">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Когда вы хотите засыпать?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="940-Qx-vBY">
                         <rect key="frame" x="20" y="291" width="374" height="46"/>
                         <color key="backgroundColor" name="darkerBlue"/>
                         <constraints>
@@ -200,9 +200,9 @@
                         <locale key="locale" localeIdentifier="ru"/>
                     </datePicker>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnh-6o-0rD">
-                        <rect key="frame" x="113" y="691" width="189" height="37"/>
+                        <rect key="frame" x="105" y="691" width="204" height="37"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="Change" cornerStyle="capsule">
+                        <buttonConfiguration key="configuration" style="plain" title="Поменять время" cornerStyle="capsule">
                             <backgroundConfiguration key="background">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </backgroundConfiguration>
@@ -219,10 +219,10 @@
                 <constraints>
                     <constraint firstItem="thv-6h-pI8" firstAttribute="trailing" secondItem="940-Qx-vBY" secondAttribute="trailing" constant="20" id="0Fu-Xa-lHO"/>
                     <constraint firstItem="pnh-6o-0rD" firstAttribute="top" secondItem="zgx-1D-pQc" secondAttribute="bottom" constant="101" id="3WZ-7Q-kHa"/>
-                    <constraint firstItem="thv-6h-pI8" firstAttribute="trailing" secondItem="pnh-6o-0rD" secondAttribute="trailing" constant="112" id="COj-wk-Ij2"/>
+                    <constraint firstItem="thv-6h-pI8" firstAttribute="trailing" secondItem="pnh-6o-0rD" secondAttribute="trailing" constant="105" id="COj-wk-Ij2"/>
                     <constraint firstItem="940-Qx-vBY" firstAttribute="leading" secondItem="thv-6h-pI8" secondAttribute="leading" constant="20" id="GOs-WC-ubv"/>
                     <constraint firstItem="zgx-1D-pQc" firstAttribute="leading" secondItem="thv-6h-pI8" secondAttribute="leading" id="Y70-8W-lFN"/>
-                    <constraint firstItem="pnh-6o-0rD" firstAttribute="leading" secondItem="thv-6h-pI8" secondAttribute="leading" constant="113" id="g5r-jL-eMh"/>
+                    <constraint firstItem="pnh-6o-0rD" firstAttribute="leading" secondItem="thv-6h-pI8" secondAttribute="leading" constant="105" id="g5r-jL-eMh"/>
                     <constraint firstItem="zgx-1D-pQc" firstAttribute="top" secondItem="940-Qx-vBY" secondAttribute="bottom" constant="37" id="oyg-mK-g3N"/>
                     <constraint firstItem="thv-6h-pI8" firstAttribute="bottom" secondItem="pnh-6o-0rD" secondAttribute="bottom" constant="134" id="sst-UX-Va0"/>
                     <constraint firstItem="zgx-1D-pQc" firstAttribute="trailing" secondItem="thv-6h-pI8" secondAttribute="trailing" id="xHZ-Wy-IWK"/>
@@ -236,7 +236,7 @@
             <color red="0.092000000178813934" green="0.10400000214576721" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="darkerBlue">
-            <color red="0.071599550550000002" green="0.077281467620000002" blue="0.1254961789" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.071999996900558472" green="0.076999999582767487" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

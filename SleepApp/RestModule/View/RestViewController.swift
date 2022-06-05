@@ -94,10 +94,10 @@ extension RestViewController: RestViewProtocol {
     func userStateAnimate(userState: String) {
         if userState == "awake" {
             self.currentStateImageView.image = UIImage(systemName: "moon.zzz.fill")
-            self.currentStateLabel.text = "Good Night"
+            self.currentStateLabel.text = "Доброй ночи"
         } else {
             self.currentStateImageView.image = UIImage(systemName: "sun.and.horizon.fill")
-            self.currentStateLabel.text = "Good Morning"
+            self.currentStateLabel.text = "Доброе утро"
         }
 
         UIView.animate(withDuration: 0.1) {
