@@ -2,7 +2,7 @@
 //  User+CoreDataClass.swift
 //  SleepApp
 //
-//  Created by Arslan Rashidov on 03.06.2022.
+//  Created by Arslan Rashidov on 05.06.2022.
 //
 //
 

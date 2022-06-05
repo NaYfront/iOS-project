@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  SleepApp
 //
-//  Created by Arslan Rashidov on 03.06.2022.
+//  Created by Arslan Rashidov on 05.06.2022.
 //
 //
 
@@ -16,9 +16,9 @@ extension User {
         return NSFetchRequest<User>(entityName: "User")
     }
 
-    @NSManaged public var state: String?
-    @NSManaged public var preferableWakeTime: Time?
     @NSManaged public var preferableSleepTime: Time?
+    @NSManaged public var preferableWakeTime: Time?
+    @NSManaged public var state: String?
 
 }
 
