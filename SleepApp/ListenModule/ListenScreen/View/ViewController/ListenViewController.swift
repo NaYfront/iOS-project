@@ -24,7 +24,6 @@ class ListenViewController: UIViewController {
     @IBOutlet weak var thirdImageWidthConstraint: NSLayoutConstraint!
     
     var presenter: ListenViewPresenterProtocol!
-    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,53 +32,28 @@ class ListenViewController: UIViewController {
     }
     
     @IBAction func didTapButton(_ sender: Any) {
-        if let player = player, player.isPlaying {
+        let url = Bundle.main.path(forResource: self.presenter.content.sound, ofType: "mp3")
+        guard let url = url else {
+            return
+        }
+        if let player = SoundManager.shared.player, URL(fileURLWithPath: url) == player.url, player.isPlaying {
             playButton.setTitle("Продолжить", for: .normal)
-            player.pause()
+            SoundManager.shared.player?.pause()
+        } else if let player = SoundManager.shared.player, URL(fileURLWithPath: url) != player.url {
+            replaySong(self)
         } else {
             playButton.setTitle("Пауза", for: .normal)
-            do {
-                try AVAudioSession.sharedInstance().setMode(.default)
-                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
-                
-                guard let player = player else {
-                    return
-                }
-                
-                player.play()
-            } catch {
-                print("something went wrong")
-            }
+            SoundManager.shared.playAudio()
         }
     }
     
     @IBAction func replaySong(_ sender: Any) {
         playButton.setTitle("Пауза", for: .normal)
-        let urlString = Bundle.main.path(forResource: self.presenter.content.sound, ofType: "mp3")
-        
-        do {
-            try AVAudioSession.sharedInstance().setMode(.default)
-            try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
-            
-            guard let urlString = urlString else {
-                return
-            }
-            
-            player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
-            
-            guard let player = player else {
-                return
-            }
-            
-            player.play()
-            
-        } catch {
-            print("something went wrong")
-        }
+        SoundManager.shared.replayAudio(sound: self.presenter.content.sound ?? "")
     }
     
     @IBAction func repeatSong(_ sender: Any) {
-        guard let player = player else {
+        guard let player = SoundManager.shared.player else {
             return
         }
         
@@ -92,25 +66,10 @@ class ListenViewController: UIViewController {
         }
     }
     
-    private func initAudioPlayer() {
-        let urlString = Bundle.main.path(forResource: self.presenter.content.sound, ofType: "mp3")
-        
-        guard let urlString = urlString else { return }
-        
-        do {
-            player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
-            player?.prepareToPlay()
-        } catch {
-            print("Error getting the audio file")
-        }
-    }
-    
     private func configure() {
         self.title = presenter.content.title
         authorLabel.text = presenter.content.author
         textLabel.text = presenter.content.text
-        
-        initAudioPlayer()
         
         changeImage(image: presenter.content.images[0], constraint: firstImageWidthConstraint, imageView: firstImage)
         changeImage(image: presenter.content.images[1], constraint: secondImageWidthConstraint, imageView: secondImage)
