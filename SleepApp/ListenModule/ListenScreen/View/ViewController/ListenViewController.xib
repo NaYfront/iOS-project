@@ -15,6 +15,7 @@
                 <outlet property="firstImage" destination="zGP-iI-vqF" id="Gxf-WV-wDK"/>
                 <outlet property="firstImageWidthConstraint" destination="LvZ-Kl-8f1" id="ugJ-Vb-UOZ"/>
                 <outlet property="playButton" destination="Bh1-Kg-9Z5" id="eyI-8X-Udt"/>
+                <outlet property="repeatButton" destination="0Ud-TY-fLE" id="8cT-FN-eTY"/>
                 <outlet property="secondImage" destination="Fo8-bx-hTa" id="Tbm-JQ-Yws"/>
                 <outlet property="secondImageWidthConstraint" destination="eHT-Pl-Rup" id="qWI-er-54q"/>
                 <outlet property="textLabel" destination="3z2-o5-pcK" id="mis-sD-fS9"/>
@@ -114,15 +115,6 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z2-o5-pcK">
-                                    <rect key="frame" x="18" y="438" width="354" height="20.333333333333314"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="354" id="Wkf-7y-0DG"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA1-mR-mS2">
                                     <rect key="frame" x="20" y="10" width="350" height="28"/>
                                     <constraints>
@@ -133,15 +125,15 @@
                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HeX-CT-Li3">
-                                    <rect key="frame" x="57" y="354" width="276" height="56"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HeX-CT-Li3">
+                                    <rect key="frame" x="20" y="354" width="350" height="56"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0J-S3-vbr">
                                             <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
                                             <color key="backgroundColor" red="0.12968198286473773" green="0.14037506943544115" blue="0.17970547080039978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="56" id="hUQ-1v-DoQ"/>
-                                                <constraint firstAttribute="width" constant="56" id="lPJ-Oo-Zb4"/>
+                                                <constraint firstAttribute="height" constant="56" id="T3a-ri-W8u"/>
+                                                <constraint firstAttribute="width" constant="56" id="mtq-1z-DLA"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain">
@@ -157,12 +149,30 @@
                                                 <action selector="replaySong:" destination="-1" eventType="touchUpInside" id="hS6-ZJ-dh2"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh1-Kg-9Z5">
-                                            <rect key="frame" x="76" y="0.0" width="200" height="56"/>
-                                            <color key="backgroundColor" name="iceGreen"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ud-TY-fLE">
+                                            <rect key="frame" x="76" y="0.0" width="56" height="56"/>
+                                            <color key="backgroundColor" red="0.12941176470588234" green="0.14117647058823529" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="200" id="Sg5-I8-Qan"/>
+                                                <constraint firstAttribute="width" constant="56" id="xvH-a8-Of3"/>
+                                                <constraint firstAttribute="height" constant="56" id="ycT-ZI-eb2"/>
                                             </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain">
+                                                <imageReference key="image" image="repeat" catalog="system" symbolScale="large"/>
+                                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="repeatSong:" destination="-1" eventType="touchUpInside" id="A9i-cp-iLQ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh1-Kg-9Z5">
+                                            <rect key="frame" x="152" y="0.0" width="198" height="56"/>
+                                            <color key="backgroundColor" name="iceGreen"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="Старт">
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -178,24 +188,30 @@
                                         </button>
                                     </subviews>
                                 </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z2-o5-pcK">
+                                    <rect key="frame" x="20" y="438" width="350" height="20.333333333333314"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" name="darkBlue"/>
                             <constraints>
-                                <constraint firstItem="HeX-CT-Li3" firstAttribute="leading" secondItem="Suw-3W-vXt" secondAttribute="leading" constant="57" id="8jd-Zj-f9n"/>
+                                <constraint firstItem="HeX-CT-Li3" firstAttribute="top" secondItem="a6m-Xd-mky" secondAttribute="bottom" constant="8" symbolic="YES" id="1A1-er-zh0"/>
+                                <constraint firstItem="HeX-CT-Li3" firstAttribute="leading" secondItem="Suw-3W-vXt" secondAttribute="leading" constant="20" id="83K-aO-Hc3"/>
                                 <constraint firstItem="sdA-p4-S92" firstAttribute="leading" secondItem="Suw-3W-vXt" secondAttribute="leading" constant="20" id="FdH-sE-oaI"/>
-                                <constraint firstItem="HeX-CT-Li3" firstAttribute="top" secondItem="a6m-Xd-mky" secondAttribute="bottom" constant="8" symbolic="YES" id="Gse-OZ-Tqg"/>
-                                <constraint firstItem="sdA-p4-S92" firstAttribute="top" secondItem="HeX-CT-Li3" secondAttribute="bottom" constant="12" id="KqW-rr-s8J"/>
+                                <constraint firstItem="3z2-o5-pcK" firstAttribute="top" secondItem="sdA-p4-S92" secondAttribute="bottom" constant="14" id="Nh2-c7-JPV"/>
+                                <constraint firstItem="3z2-o5-pcK" firstAttribute="leading" secondItem="Suw-3W-vXt" secondAttribute="leading" constant="20" id="P9v-Hq-aEL"/>
                                 <constraint firstItem="kA1-mR-mS2" firstAttribute="leading" secondItem="Suw-3W-vXt" secondAttribute="leading" constant="20" id="Rb9-AH-maM"/>
                                 <constraint firstItem="a6m-Xd-mky" firstAttribute="top" secondItem="kA1-mR-mS2" secondAttribute="bottom" constant="8" symbolic="YES" id="Rfe-wN-8R2"/>
+                                <constraint firstAttribute="trailing" secondItem="HeX-CT-Li3" secondAttribute="trailing" constant="20" id="SoV-G0-Urq"/>
                                 <constraint firstAttribute="trailing" secondItem="kA1-mR-mS2" secondAttribute="trailing" constant="20" id="Tml-0K-eHk"/>
+                                <constraint firstAttribute="trailing" secondItem="3z2-o5-pcK" secondAttribute="trailing" constant="20" id="UMZ-xH-Z0p"/>
                                 <constraint firstAttribute="trailing" secondItem="a6m-Xd-mky" secondAttribute="trailing" id="ZDA-bH-dCK"/>
                                 <constraint firstItem="a6m-Xd-mky" firstAttribute="leading" secondItem="Suw-3W-vXt" secondAttribute="leading" id="aiA-Ng-xd9"/>
-                                <constraint firstItem="3z2-o5-pcK" firstAttribute="leading" secondItem="Suw-3W-vXt" secondAttribute="leading" constant="18" id="bU8-M7-h0v"/>
-                                <constraint firstItem="3z2-o5-pcK" firstAttribute="top" secondItem="sdA-p4-S92" secondAttribute="bottom" constant="14" id="r2b-ts-9S7"/>
+                                <constraint firstItem="sdA-p4-S92" firstAttribute="top" secondItem="HeX-CT-Li3" secondAttribute="bottom" constant="12" id="gwa-oT-dMq"/>
+                                <constraint firstAttribute="bottom" secondItem="3z2-o5-pcK" secondAttribute="bottom" constant="20" symbolic="YES" id="qyQ-uT-DJB"/>
                                 <constraint firstItem="kA1-mR-mS2" firstAttribute="top" secondItem="Suw-3W-vXt" secondAttribute="top" constant="10" id="rMc-W1-Smm"/>
-                                <constraint firstAttribute="trailing" secondItem="HeX-CT-Li3" secondAttribute="trailing" constant="57" id="xcu-Pf-ZmK"/>
-                                <constraint firstAttribute="bottom" secondItem="3z2-o5-pcK" secondAttribute="bottom" constant="20" id="xyV-Pv-Ern"/>
-                                <constraint firstAttribute="trailing" secondItem="3z2-o5-pcK" secondAttribute="trailing" constant="18" id="z2p-Gz-EWj"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -223,11 +239,12 @@
     </objects>
     <resources>
         <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
+        <image name="repeat" catalog="system" width="128" height="98"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="darkBlue">
-            <color red="0.093999996781349182" green="0.10199999809265137" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.092000000178813934" green="0.10400000214576721" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="iceGreen">
             <color red="0.11400000005960464" green="0.76499998569488525" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

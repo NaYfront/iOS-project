@@ -25,6 +25,7 @@ struct ListenContent {
     let author: String
     let title: String
     let images: [UIImage?]
+    let sound: String?
     let text: String
 }
 

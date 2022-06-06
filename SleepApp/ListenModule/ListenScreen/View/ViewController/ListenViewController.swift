@@ -15,7 +15,9 @@ class ListenViewController: UIViewController {
     @IBOutlet var secondImage: UIImageView!
     @IBOutlet var thirdImage: UIImageView!
     @IBOutlet var textLabel: UILabel!
+    
     @IBOutlet var playButton: UIButton!
+    @IBOutlet weak var repeatButton: UIButton!
     
     @IBOutlet weak var firstImageWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var secondImageWidthConstraint: NSLayoutConstraint!
@@ -52,8 +54,8 @@ class ListenViewController: UIViewController {
     }
     
     @IBAction func replaySong(_ sender: Any) {
-        playButton.setTitle("Stop", for: .normal)
-        let urlString = Bundle.main.path(forResource: "SeaAsmr", ofType: "mp3")
+        playButton.setTitle("Пауза", for: .normal)
+        let urlString = Bundle.main.path(forResource: self.presenter.content.sound, ofType: "mp3")
         
         do {
             try AVAudioSession.sharedInstance().setMode(.default)
@@ -76,8 +78,25 @@ class ListenViewController: UIViewController {
         }
     }
     
+    @IBAction func repeatSong(_ sender: Any) {
+        guard let player = player else {
+            return
+        }
+        
+        if player.numberOfLoops == 0 {
+            repeatButton.setImage(UIImage(systemName: "repeat"), for: .normal)
+            player.numberOfLoops = -1
+        } else {
+            repeatButton.imageView?.tintColor = .white
+            player.numberOfLoops = 0
+        }
+    }
+    
     private func initAudioPlayer() {
-        let urlString = Bundle.main.path(forResource: "SeaAsmr", ofType: "mp3")!
+        let urlString = Bundle.main.path(forResource: self.presenter.content.sound, ofType: "mp3")
+        
+        guard let urlString = urlString else { return }
+        
         do {
             player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: urlString))
             player?.prepareToPlay()
