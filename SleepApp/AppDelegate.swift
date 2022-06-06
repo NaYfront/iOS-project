@@ -17,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         notificationCenter.requestAuthorization(options: [.alert, .sound, .badge], completionHandler: { (granted, error) in
             
             guard granted else { return }
-            self.notificationCenter.getNotificationSettings(completionHandler: {
-                (settings) in
+            self.notificationCenter.getNotificationSettings(completionHandler: { (settings) in
                 print(settings)
                 guard settings.authorizationStatus == .authorized else { return }
             })
