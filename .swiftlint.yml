@@ -1,0 +1,15 @@
+disabled_rules:
+- identifier_name
+- line_length
+- trailing_whitespace
+- force_cast
+- type_body_length
+- shorthand_operator
+- file_length
+
+excluded:
+- Pods
+
+
+
+
